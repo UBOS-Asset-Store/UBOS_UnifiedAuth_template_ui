@@ -1906,7 +1906,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:07:56.350Z",
-        "updatedAt": "2024-01-24T15:56:35.661Z",
+        "updatedAt": "2024-02-12T11:42:29.150Z",
         "deleted": false,
         "policies": [
             {
@@ -1992,7 +1992,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:49:55.580Z",
-        "updatedAt": "2024-01-24T15:56:33.659Z",
+        "updatedAt": "2024-02-12T11:42:31.251Z",
         "deleted": false,
         "policies": [
             {
@@ -2217,7 +2217,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:13:12.277Z",
-        "updatedAt": "2024-01-24T15:02:28.919Z",
+        "updatedAt": "2024-02-12T11:42:33.025Z",
         "deleted": false,
         "policies": [
             {
@@ -6584,7 +6584,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:55:13.835Z",
-        "updatedAt": "2024-01-24T15:56:31.107Z",
+        "updatedAt": "2024-02-12T11:42:34.917Z",
         "deleted": false,
         "policies": [
             {
@@ -6968,7 +6968,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:18:32.543Z",
-        "updatedAt": "2024-02-09T10:02:40.213Z",
+        "updatedAt": "2024-02-12T15:21:29.734Z",
         "deleted": false,
         "policies": [
             {
@@ -7039,7 +7039,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-02-09T12:07:06.334Z",
+        "updatedAt": "2024-02-12T15:39:16.395Z",
         "deleted": false,
         "policies": [
             {
@@ -8158,7 +8158,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T15:04:15.201Z",
-        "updatedAt": "2024-02-02T15:23:10.810Z",
+        "updatedAt": "2024-02-12T17:57:10.664Z",
         "deleted": false,
         "policies": [
             {
@@ -8236,7 +8236,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T15:07:51.391Z",
-        "updatedAt": "2024-02-09T08:08:14.833Z",
+        "updatedAt": "2024-02-12T17:09:51.761Z",
         "deleted": false,
         "policies": [
             {
@@ -8321,7 +8321,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T12:47:58.188Z",
-        "updatedAt": "2024-02-12T09:42:21.845Z",
+        "updatedAt": "2024-02-12T17:57:09.777Z",
         "deleted": false,
         "policies": [
             {
@@ -8536,6 +8536,73 @@
         },
         "createdAt": "2024-02-08T16:33:58.470Z",
         "updatedAt": "2024-02-12T09:51:26.303Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65ca5bfdf0cd6acacf3b5223",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getLogo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "https://{{main.env.nodeUrl}}"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": true,
+            "pageId": "Login",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "path": "/get_logo"
+            },
+            "dynamicBindingPathList": [],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-12T17:57:17.870Z",
+        "updatedAt": "2024-02-12T17:58:13.661Z",
         "deleted": false,
         "policies": [
             {

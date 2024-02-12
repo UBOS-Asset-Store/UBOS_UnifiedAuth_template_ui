@@ -6,7 +6,7 @@
     "isPublic": true,
     "isShowPlatformTag": true,
     "createdAt": "2023-03-02T13:50:57.853Z",
-    "updatedAt": "2024-02-02T18:31:26.806Z",
+    "updatedAt": "2024-02-12T17:05:34.969Z",
     "deleted": false,
     "pages": [
         {
@@ -73,15 +73,15 @@
         }
     ],
     "global_setting": {
-        "favicon": "https://ubraine.com/wp-content/uploads/2018/09/cropped-ubraine_favicon-32x32.png",
+        "favicon": "https://ubos.tech/wp-content/uploads/2023/02/favicon-32x32-1.png",
         "title": "UBOS",
-        "css": "https://authnr-4281-659d2e22387fb71100000410.ubos.tech/css"
+        "css": "https://${env.get(\"nodeUrl\")}/css"
     },
     "lastDeployedAt": "2022-10-19T15:59:36.363Z",
     "is_custom_auth": true,
     "auth_mode_setting": {
         "login_id": "Login",
-        "auth_node": "https://authnr-4281-659d2e22387fb71100000410.ubos.tech/check_token",
+        "auth_node": "https://${env.get(\"nodeUrl\")}/check_token",
         "registry_id": "Registration",
         "other_pages": [
             "queryToResetPassword",
