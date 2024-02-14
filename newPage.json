@@ -1504,7 +1504,7 @@
                                                     }
                                                 ],
                                                 "borderRadius": "ROUNDED",
-                                                "boxShadow": "VARIANT2",
+                                                "boxShadow": "VARIANT3",
                                                 "iconName": "edit",
                                                 "iconAlign": "left"
                                             },
@@ -1847,7 +1847,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "Attribute",
+                                                                        "label": "List of added attributes:",
                                                                         "computedValue": "{{editUserModalTable.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
                                                                     }
                                                                 },
@@ -2741,7 +2741,7 @@
                                 "leftColumn": 6,
                                 "rightColumn": 63,
                                 "topRow": 8,
-                                "bottomRow": 137,
+                                "bottomRow": 86,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": []
@@ -2836,7 +2836,7 @@
                                                                         "key": "disabledWhenInvalid"
                                                                     }
                                                                 ],
-                                                                "boxShadow": "VARIANT2"
+                                                                "boxShadow": "VARIANT3"
                                                             },
                                                             {
                                                                 "width": 724,
@@ -3140,7 +3140,7 @@
                                                                 ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "labelStyle": "",
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_select"
+                                                                "classStyle": "setWidthNintyEightPercent "
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -3459,7 +3459,7 @@
                                                                         "key": "onOptionChange"
                                                                     }
                                                                 ],
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_multiSelect",
+                                                                "classStyle": "setWidthNintyEightPercent ",
                                                                 "labelStyle": "",
                                                                 "onOptionChange": "{{getAllAttributesForAddUserTabl.run()}}"
                                                             },
@@ -3504,7 +3504,7 @@
                                                                         "key": "onOptionChange"
                                                                     }
                                                                 ],
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_multiSelect",
+                                                                "classStyle": "setWidthNintyEightPercent ",
                                                                 "labelStyle": "",
                                                                 "onOptionChange": "{{getAllAttributesForAddUserTabl.run()}}"
                                                             },
@@ -3547,7 +3547,7 @@
                                                                         "isDisabled": false,
                                                                         "isCellVisible": true,
                                                                         "isDerived": false,
-                                                                        "label": "Attribute",
+                                                                        "label": "List of added attributes:",
                                                                         "computedValue": "{{attributeUserTable.sanitizedTableData.map((currentRow) => ( currentItem.name))}}"
                                                                     },
                                                                     "_id": {
@@ -3631,8 +3631,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 16,
-                                                                "topRow": 112,
-                                                                "bottomRow": 116,
+                                                                "topRow": 104,
+                                                                "bottomRow": 108,
                                                                 "parentId": "ntuhkqxaw5",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -3652,7 +3652,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 557.625,
                                                         "topRow": 0,
-                                                        "bottomRow": 1180,
+                                                        "bottomRow": 1100,
                                                         "parentId": "7zi8hkfjvo"
                                                     }
                                                 ],
@@ -3670,7 +3670,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 1,
-                                                "bottomRow": 119,
+                                                "bottomRow": 111,
                                                 "parentId": "obwgtjeud0",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [],
@@ -3686,7 +3686,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 497.84765625,
                                         "topRow": 0,
-                                        "bottomRow": 1210,
+                                        "bottomRow": 1130,
                                         "parentId": "u2yxk6zrfs",
                                         "dynamicBindingPathList": [],
                                         "dynamicTriggerPathList": []
@@ -8785,10 +8785,10 @@
                                                                 "widgetId": "ntsa8az994",
                                                                 "renderMode": "CANVAS",
                                                                 "isLoading": false,
-                                                                "leftColumn": 24,
-                                                                "rightColumn": 40,
-                                                                "topRow": 87,
-                                                                "bottomRow": 93,
+                                                                "leftColumn": 23,
+                                                                "rightColumn": 39,
+                                                                "topRow": 78,
+                                                                "bottomRow": 84,
                                                                 "parentId": "x0opkfulqk",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [
@@ -8812,8 +8812,8 @@
                                                                 "containerStyle": "card",
                                                                 "borderColor": "transparent",
                                                                 "borderWidth": "0",
-                                                                "borderRadius": "10",
-                                                                "boxShadow": "VARIANT3",
+                                                                "borderRadius": "",
+                                                                "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
                                                                     {
@@ -8972,7 +8972,7 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 6,
+                                                                "topRow": 8,
                                                                 "bottomRow": 26,
                                                                 "parentId": "x0opkfulqk",
                                                                 "dynamicBindingPathList": [],
@@ -8986,7 +8986,7 @@
                                                                 "borderColor": "transparent",
                                                                 "borderWidth": "0",
                                                                 "borderRadius": "10",
-                                                                "boxShadow": "VARIANT3",
+                                                                "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
                                                                     {
@@ -9191,7 +9191,7 @@
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
                                                                 "topRow": 28,
-                                                                "bottomRow": 56,
+                                                                "bottomRow": 51,
                                                                 "parentId": "x0opkfulqk",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -9204,7 +9204,7 @@
                                                                 "borderColor": "transparent",
                                                                 "borderWidth": "0",
                                                                 "borderRadius": "10",
-                                                                "boxShadow": "VARIANT3",
+                                                                "boxShadow": "NONE",
                                                                 "animateLoading": true,
                                                                 "children": [
                                                                     {
@@ -9244,8 +9244,8 @@
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
                                                                                 "rightColumn": 64,
-                                                                                "topRow": 1,
-                                                                                "bottomRow": 5,
+                                                                                "topRow": 0,
+                                                                                "bottomRow": 4,
                                                                                 "parentId": "jlyosovwtp",
                                                                                 "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": []
@@ -9273,7 +9273,7 @@
                                                                                 "parentColumnSpace": 15.0546875,
                                                                                 "parentRowSpace": 10,
                                                                                 "leftColumn": 0,
-                                                                                "rightColumn": 15,
+                                                                                "rightColumn": 14,
                                                                                 "topRow": 6,
                                                                                 "bottomRow": 22,
                                                                                 "parentId": "jlyosovwtp",
@@ -9310,10 +9310,10 @@
                                                                                 "isLoading": false,
                                                                                 "parentColumnSpace": 15.0546875,
                                                                                 "parentRowSpace": 10,
-                                                                                "leftColumn": 16,
-                                                                                "rightColumn": 35,
-                                                                                "topRow": 9,
-                                                                                "bottomRow": 16,
+                                                                                "leftColumn": 14,
+                                                                                "rightColumn": 33,
+                                                                                "topRow": 10,
+                                                                                "bottomRow": 17,
                                                                                 "parentId": "jlyosovwtp",
                                                                                 "text": "",
                                                                                 "dynamicBindingPathList": [
@@ -9357,8 +9357,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 58,
-                                                                "bottomRow": 85,
+                                                                "topRow": 53,
+                                                                "bottomRow": 77,
                                                                 "parentId": "x0opkfulqk",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": []
@@ -9373,7 +9373,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 336.421875,
                                                         "topRow": 0,
-                                                        "bottomRow": 950,
+                                                        "bottomRow": 860,
                                                         "parentId": "y31achnryt"
                                                     }
                                                 ],
@@ -9391,7 +9391,7 @@
                                                 "leftColumn": 3,
                                                 "rightColumn": 63,
                                                 "topRow": 0,
-                                                "bottomRow": 97,
+                                                "bottomRow": 87,
                                                 "parentId": "ytf4anf170",
                                                 "classStyle": "center_container",
                                                 "dynamicBindingPathList": [],
@@ -9408,7 +9408,7 @@
                                         "leftColumn": 0,
                                         "rightColumn": 421.5,
                                         "topRow": 0,
-                                        "bottomRow": 990,
+                                        "bottomRow": 890,
                                         "parentId": "m6u0cuyp4i"
                                     }
                                 ],
@@ -9428,7 +9428,7 @@
                                 "leftColumn": 6,
                                 "rightColumn": 64,
                                 "topRow": 8,
-                                "bottomRow": 137,
+                                "bottomRow": 96,
                                 "parentId": "0",
                                 "dynamicBindingPathList": [],
                                 "dynamicTriggerPathList": [],
