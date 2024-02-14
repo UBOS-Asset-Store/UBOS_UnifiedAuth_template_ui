@@ -8080,14 +8080,13 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "main.URL.queryParams",
                 "main.URL.queryParams.code"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T13:26:42.719Z",
-        "updatedAt": "2024-02-02T13:28:06.038Z",
+        "updatedAt": "2024-02-14T14:38:27.735Z",
         "deleted": false,
         "policies": [
             {
@@ -8519,7 +8518,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAppData"
+                "path": "/getAdminEmail"
             },
             "dynamicBindingPathList": [
                 {
@@ -8535,7 +8534,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T16:33:58.470Z",
-        "updatedAt": "2024-02-12T09:51:26.303Z",
+        "updatedAt": "2024-02-14T17:04:54.432Z",
         "deleted": false,
         "policies": [
             {

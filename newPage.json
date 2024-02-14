@@ -10170,7 +10170,7 @@
                                                                 "boxShadow": "VARIANT3",
                                                                 "iconName": "log-in",
                                                                 "iconAlign": "left",
-                                                                "onClick": "{{navigateTo('UserManagement', {})}}"
+                                                                "onClick": "{{navigateTo('Page Management', {})}}"
                                                             },
                                                             {
                                                                 "isVisible": true,
