@@ -14,15 +14,15 @@
             "isDefault": true
         },
         {
-            "_id": "UserManagement",
+            "_id": "Page Management",
             "isDefault": false
         },
         {
-            "_id": "Modules",
+            "_id": "Role Management",
             "isDefault": false
         },
         {
-            "_id": "AdminRoles",
+            "_id": "User Management",
             "isDefault": false
         },
         {
