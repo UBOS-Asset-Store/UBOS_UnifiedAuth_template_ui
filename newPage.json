@@ -124,7 +124,7 @@
                                                         "canExtend": false,
                                                         "children": [
                                                             {
-                                                                "isVisible": true,
+                                                                "isVisible": false,
                                                                 "iconName": "duplicate",
                                                                 "borderRadius": "CIRCLE",
                                                                 "boxShadow": "VARIANT1",
@@ -2009,7 +2009,7 @@
                                                         "buttonType": "SIMPLE",
                                                         "placement": "CENTER",
                                                         "isVisible": true,
-                                                        "isDisabled": "{{!TableChild.selectedRow.name || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update modules\")}}",
+                                                        "isDisabled": "{{!TableChild.selectedRow.name || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update page\")}}",
                                                         "index": 0,
                                                         "menuItems": {},
                                                         "onClick": "{{showModal('ModalEditChild')}}"
@@ -2023,7 +2023,7 @@
                                                         "placement": "CENTER",
                                                         "widgetId": "",
                                                         "isVisible": true,
-                                                        "isDisabled": "{{!TableChild.selectedRow.name || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create modules\")}}",
+                                                        "isDisabled": "{{!TableChild.selectedRow.name || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete page\")}}",
                                                         "index": 1,
                                                         "menuItems": {},
                                                         "onClick": "{{deleteChildModule.run(() => getModules.run(), () => {})}}"
@@ -2118,7 +2118,7 @@
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button1",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create modules\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create page\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -2462,7 +2462,7 @@
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button5",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create modules\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create page\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -2518,7 +2518,7 @@
                                                         "buttonType": "SIMPLE",
                                                         "placement": "CENTER",
                                                         "isVisible": true,
-                                                        "isDisabled": "{{!TableParent.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update modules\")}}",
+                                                        "isDisabled": "{{!TableParent.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update page\")}}",
                                                         "index": 0,
                                                         "menuItems": {},
                                                         "onClick": "{{showModal('ModalEditParent')}}"
@@ -2532,7 +2532,7 @@
                                                         "placement": "CENTER",
                                                         "widgetId": "",
                                                         "isVisible": true,
-                                                        "isDisabled": "{{!TableParent.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create modules\")}}",
+                                                        "isDisabled": "{{!TableParent.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete page\")}}",
                                                         "index": 1,
                                                         "menuItems": {},
                                                         "onClick": "{{deleteParentModule.run(() => getModules.run(), () => {})}}"
@@ -4600,7 +4600,7 @@
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button2Copy",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create attributes\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create attribute\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -4891,7 +4891,7 @@
                                                 "buttonVariant": "SECONDARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button1Copy",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create attributes\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create attribute\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -5099,7 +5099,7 @@
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button1",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create roles\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"create role\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -5146,7 +5146,7 @@
                                                 "buttonVariant": "SECONDARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button2",
-                                                "isDisabled": "{{!roles_table.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update roles\")}}",
+                                                "isDisabled": "{{!roles_table.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"update role\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -5193,7 +5193,7 @@
                                                 "buttonVariant": "SECONDARY",
                                                 "placement": "CENTER",
                                                 "widgetName": "Button8",
-                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete attributes\")}}",
+                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete attribute\")}}",
                                                 "isDefaultClickDisabled": true,
                                                 "recaptchaType": "V3",
                                                 "version": 1,
@@ -5240,7 +5240,7 @@
                                                 "menuVariant": "SECONDARY",
                                                 "placement": "CENTER",
                                                 "isCompact": false,
-                                                "isDisabled": "{{!roles_table.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete roles\")}}",
+                                                "isDisabled": "{{!roles_table.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName === \"delete role\")}}",
                                                 "animateLoading": true,
                                                 "menuItems": {
                                                     "menuItem1": {
@@ -5571,7 +5571,7 @@
                                                                 "classStyle": "setWidthNintyEightPercent"
                                                             },
                                                             {
-                                                                "isVisible": true,
+                                                                "isVisible": false,
                                                                 "widgetName": "options_switch",
                                                                 "options": "[\n  {\n    \"label\": \"Read\",\n    \"value\": \"R\"\n  }\n]",
                                                                 "defaultSelectedValues": "[\n  \"R\"\n]",
@@ -5598,8 +5598,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 18,
-                                                                "bottomRow": 24,
+                                                                "topRow": 17,
+                                                                "bottomRow": 21,
                                                                 "parentId": "ftgmteqk96",
                                                                 "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
@@ -5608,7 +5608,7 @@
                                                             },
                                                             {
                                                                 "isVisible": true,
-                                                                "text": "Role \"{{roles_table.selectedRow.name}}\" has pages: {{roles_table.selectedRow.permissions.map(i => `${i.module}`).join(',  ')}}",
+                                                                "text": "Role \"{{roles_table.selectedRow.name}}\" has access to view such pages: <span style=\"font-weight: bold;\">{{roles_table.selectedRow.permissions.map(i => `${i.module}`).join(',  ')}}</span>",
                                                                 "fontSize": "HEADING3",
                                                                 "fontStyle": "",
                                                                 "textAlign": "LEFT",
@@ -5631,8 +5631,8 @@
                                                                 "parentRowSpace": 10,
                                                                 "leftColumn": 0,
                                                                 "rightColumn": 64,
-                                                                "topRow": 24,
-                                                                "bottomRow": 36,
+                                                                "topRow": 21,
+                                                                "bottomRow": 30,
                                                                 "parentId": "ftgmteqk96",
                                                                 "dynamicBindingPathList": [
                                                                     {
@@ -5692,7 +5692,7 @@
                                                         "leftColumn": 0,
                                                         "rightColumn": 344.25,
                                                         "topRow": 0,
-                                                        "bottomRow": 390,
+                                                        "bottomRow": 420,
                                                         "parentId": "370xf50sod"
                                                     }
                                                 ],
@@ -8804,7 +8804,7 @@
                                                                 "backgroundColor": "#D5E8FA"
                                                             },
                                                             {
-                                                                "isVisible": true,
+                                                                "isVisible": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"create app settings\")}}",
                                                                 "widgetName": "FormButton2",
                                                                 "text": "Submit",
                                                                 "isDefaultClickDisabled": true,
@@ -8818,7 +8818,7 @@
                                                                 "iconSVG": "/static/media/icon.cca02633.svg",
                                                                 "buttonVariant": "PRIMARY",
                                                                 "buttonColor": "#66aff2",
-                                                                "disabledWhenInvalid": false,
+                                                                "disabledWhenInvalid": "",
                                                                 "resetFormOnClick": false,
                                                                 "widgetId": "ntsa8az994",
                                                                 "renderMode": "CANVAS",
@@ -8828,7 +8828,11 @@
                                                                 "topRow": 78,
                                                                 "bottomRow": 84,
                                                                 "parentId": "x0opkfulqk",
-                                                                "dynamicBindingPathList": [],
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "isVisible"
+                                                                    }
+                                                                ],
                                                                 "dynamicTriggerPathList": [
                                                                     {
                                                                         "key": "onClick"
@@ -8839,6 +8843,12 @@
                                                                 "dynamicPropertyPathList": [
                                                                     {
                                                                         "key": "onClick"
+                                                                    },
+                                                                    {
+                                                                        "key": "disabledWhenInvalid"
+                                                                    },
+                                                                    {
+                                                                        "key": "isVisible"
                                                                     }
                                                                 ],
                                                                 "onClick": "{{initApp.run(() => {(showAlert('Settings saved','success'), closeModal(\"appSettingsModal\")); getCredentials.run()}, () => {})}}"
@@ -8911,7 +8921,7 @@
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": false,
                                                                                 "isRequired": true,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "EMAIL",
@@ -8934,10 +8944,18 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "defaultText"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isDisabled"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "ubos@ubos.tech"
+                                                                                "placeholderText": "ubos@ubos.tech",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isDisabled"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -8953,7 +8971,7 @@
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": false,
                                                                                 "isRequired": true,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "PASSWORD",
@@ -8976,10 +8994,18 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "defaultText"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isDisabled"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "enter your password"
+                                                                                "placeholderText": "enter your password",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isDisabled"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -9084,7 +9110,7 @@
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": false,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -9107,10 +9133,18 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "defaultText"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isDisabled"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "X08378XXXX346-bsmXXp6XX0bunp4s0a0ch5hfh4XXXXXX"
+                                                                                "placeholderText": "X08378XXXX346-bsmXXp6XX0bunp4s0a0ch5hfh4XXXXXX",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isDisabled"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -9126,7 +9160,7 @@
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": false,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -9149,10 +9183,18 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "defaultText"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isDisabled"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "XXXXXX-PWudXXGi9TX7XJ--aTmq-v-B-XXX"
+                                                                                "placeholderText": "XXXXXX-PWudXXGi9TX7XJ--aTmq-v-B-XXX",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isDisabled"
+                                                                                    }
+                                                                                ]
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -9168,7 +9210,7 @@
                                                                                 "labelStyle": "",
                                                                                 "resetOnSubmit": false,
                                                                                 "isRequired": false,
-                                                                                "isDisabled": false,
+                                                                                "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "",
                                                                                 "inputType": "TEXT",
@@ -9194,10 +9236,18 @@
                                                                                     },
                                                                                     {
                                                                                         "key": "defaultText"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isDisabled"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "https://{{main.env.nodeUrl}}/LoginGoogle"
+                                                                                "placeholderText": "https://{{main.env.nodeUrl}}/LoginGoogle",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isDisabled"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,
@@ -9323,7 +9373,7 @@
                                                                                 "dynamicTriggerPathList": []
                                                                             },
                                                                             {
-                                                                                "isVisible": true,
+                                                                                "isVisible": "{{appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "widgetName": "FileSender1",
                                                                                 "valueRes": null,
                                                                                 "classStyle": "",
@@ -9357,6 +9407,9 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "uploadUrl"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "isVisible"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [
@@ -9364,7 +9417,12 @@
                                                                                         "key": "completeRes"
                                                                                     }
                                                                                 ],
-                                                                                "uploadButtonText": "Save"
+                                                                                "uploadButtonText": "Save",
+                                                                                "dynamicPropertyPathList": [
+                                                                                    {
+                                                                                        "key": "isVisible"
+                                                                                    }
+                                                                                ]
                                                                             }
                                                                         ],
                                                                         "minHeight": 400,

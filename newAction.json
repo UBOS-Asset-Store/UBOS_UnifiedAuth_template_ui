@@ -598,7 +598,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-08T09:31:03.416Z",
-        "updatedAt": "2024-02-09T15:47:33.225Z",
+        "updatedAt": "2024-02-15T13:15:30.516Z",
         "deleted": false,
         "policies": [
             {
@@ -673,7 +673,7 @@
                 "JSON.stringify(field_add_user_role.selectedOptionValue)",
                 "JSON.stringify(attributeIdsFromTable.text)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl,JSON.stringify(appsmith.user.auth_module.user.info.user.attributes),DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl"
+                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -768,7 +768,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:09:27.661Z",
-        "updatedAt": "2024-01-24T15:03:59.410Z",
+        "updatedAt": "2024-02-15T10:49:45.707Z",
         "deleted": false,
         "policies": [
             {
@@ -812,7 +812,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"role\": \"{{editUserModalRole.selectedOptionValue}}\",\n\t\"_id\": \"{{Table1.selectedRow._id}}\"\n}",
+                "body": "{\n\t\"role\": \"{{editUserModalRole.selectedOptionValue}}\",\n\t\"_id\": \"{{Table1.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -836,8 +836,9 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "field_user_role.selectedOptionValue",
-                "Table1.selectedRow._id"
+                "editUserModalRole.selectedOptionValue",
+                "Table1.selectedRow._id",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -1906,7 +1907,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:07:56.350Z",
-        "updatedAt": "2024-02-12T11:42:29.150Z",
+        "updatedAt": "2024-02-15T13:14:30.708Z",
         "deleted": false,
         "policies": [
             {
@@ -1950,7 +1951,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"childModule\":\"{{childModule_field.selectedOptionValue}}\",\n\t\"parentModule\":\"{{TableParent.selectedRow._id}}\",\n\t\"position\":{{positionChild.text}}\n}",
+                "body": "{\n\t\"childModule\":\"{{childModule_field.selectedOptionValue}}\",\n\t\"parentModule\":\"{{TableParent.selectedRow._id}}\",\n\t\"position\":{{positionChild.text}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -1979,7 +1980,8 @@
                 "main.env.nodeUrl",
                 "childModule_field.selectedOptionValue",
                 "TableParent.selectedRow._id",
-                "positionChild.text"
+                "positionChild.text",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -1992,7 +1994,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:49:55.580Z",
-        "updatedAt": "2024-02-12T11:42:31.251Z",
+        "updatedAt": "2024-02-15T13:14:35.525Z",
         "deleted": false,
         "policies": [
             {
@@ -2046,7 +2048,7 @@
                     }
                 ],
                 "path": "/createParentModule",
-                "body": "{\n\t\"name\": \"{{name_field.text}}\",\n\t\"position\": {{position_field.text}},\n\t\"icon\": \"{{icon_field.text}}\"\n}"
+                "body": "{\n\t\"name\": \"{{name_field.text}}\",\n\t\"position\": {{position_field.text}},\n\t\"icon\": \"{{icon_field.text}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -2062,7 +2064,8 @@
                 "main.env.nodeUrl",
                 "name_field.text",
                 "position_field.text",
-                "icon_field.text"
+                "icon_field.text",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -2146,7 +2149,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:54:09.638Z",
-        "updatedAt": "2024-01-24T15:56:25.680Z",
+        "updatedAt": "2024-02-15T09:56:25.369Z",
         "deleted": false,
         "policies": [
             {
@@ -2217,7 +2220,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:13:12.277Z",
-        "updatedAt": "2024-02-12T11:42:33.025Z",
+        "updatedAt": "2024-02-15T13:14:40.037Z",
         "deleted": false,
         "policies": [
             {
@@ -2261,7 +2264,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\":\"{{TableParent.selectedRow._id}}\",\n\t\"childModule_id\":\"{{TableChild.selectedRow.name}}\"\n}",
+                "body": "{\n\t\"_id\":\"{{TableParent.selectedRow._id}}\",\n\t\"childModule_id\":\"{{TableChild.selectedRow.name}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -2286,7 +2289,8 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "TableParent.selectedRow._id",
-                "TableChild.selectedRow.name"
+                "TableChild.selectedRow.name",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -5433,7 +5437,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:52:15.502Z",
-        "updatedAt": "2024-02-09T14:49:14.185Z",
+        "updatedAt": "2024-02-15T13:15:07.670Z",
         "deleted": false,
         "policies": [
             {
@@ -5518,7 +5522,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:26:27.553Z",
-        "updatedAt": "2024-02-13T11:25:18.047Z",
+        "updatedAt": "2024-02-15T10:48:39.445Z",
         "deleted": false,
         "policies": [
             {
@@ -6500,7 +6504,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:51:48.152Z",
-        "updatedAt": "2024-01-24T15:56:29.477Z",
+        "updatedAt": "2024-02-15T13:14:55.957Z",
         "deleted": false,
         "policies": [
             {
@@ -6544,7 +6548,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"name\": \"{{name_field_edit.text}}\",\n\t\"position\": {{position_field_edit.text}},\n\t\"icon\": \"{{icon_field_edit.text}}\",\n\t\"_id\": \"{{TableParent.selectedRow._id}}\"\n}",
+                "body": "{\n\t\"name\": \"{{name_field_edit.text}}\",\n\t\"position\": {{position_field_edit.text}},\n\t\"icon\": \"{{icon_field_edit.text}}\",\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -6571,7 +6575,8 @@
                 "name_field_edit.text",
                 "position_field_edit.text",
                 "icon_field_edit.text",
-                "TableParent.selectedRow._id"
+                "TableParent.selectedRow._id",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -6584,7 +6589,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:55:13.835Z",
-        "updatedAt": "2024-02-14T12:11:52.662Z",
+        "updatedAt": "2024-02-15T13:14:43.971Z",
         "deleted": false,
         "policies": [
             {
@@ -6628,7 +6633,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\"\n}",
+                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -6652,7 +6657,8 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "TableParent.selectedRow._id"
+                "TableParent.selectedRow._id",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -6665,7 +6671,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T17:04:12.998Z",
-        "updatedAt": "2024-01-24T15:56:28.038Z",
+        "updatedAt": "2024-02-15T13:14:51.261Z",
         "deleted": false,
         "policies": [
             {
@@ -6709,7 +6715,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"position\": \"{{positionChild_edit.text}}\",\n\t\"name\": \"{{TableChild.selectedRow.name}}\"\n}",
+                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"position\": \"{{positionChild_edit.text}}\",\n\t\"name\": \"{{TableChild.selectedRow.name}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -6735,7 +6741,8 @@
                 "main.env.nodeUrl",
                 "TableParent.selectedRow._id",
                 "positionChild_edit.text",
-                "TableChild.selectedRow.name"
+                "TableChild.selectedRow.name",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -7100,7 +7107,7 @@
                     }
                 ],
                 "path": "/createAttributeGroup",
-                "body": "{\n\t\"name\": {{JSON.stringify(attributeGroup_name_field.text)}}\n}"
+                "body": "{\n\t\"name\": {{JSON.stringify(attributeGroup_name_field.text)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -7114,13 +7121,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(attributeGroup_name_field.text)"
+                "JSON.stringify(attributeGroup_name_field.text)",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:17:21.966Z",
-        "updatedAt": "2024-01-24T15:02:58.973Z",
+        "updatedAt": "2024-02-15T13:15:16.440Z",
         "deleted": false,
         "policies": [
             {
@@ -7345,7 +7353,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T12:31:04.549Z",
-        "updatedAt": "2024-02-09T17:01:52.705Z",
+        "updatedAt": "2024-02-15T13:14:08.048Z",
         "deleted": false,
         "policies": [
             {
@@ -7609,7 +7617,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"attributeId\": {{JSON.stringify(attributesTable.selectedRow._id)}}\n}",
+                "body": "{\n\t\"attributeId\": {{JSON.stringify(attributesTable.selectedRow._id)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7633,13 +7641,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(attributesTable.selectedRow._id)"
+                "JSON.stringify(attributesTable.selectedRow._id)",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-25T13:52:30.217Z",
-        "updatedAt": "2024-01-25T15:45:07.265Z",
+        "updatedAt": "2024-02-15T10:49:13.105Z",
         "deleted": false,
         "policies": [
             {
@@ -7793,7 +7802,7 @@
                     }
                 ],
                 "path": "/deleteAttributeGroup",
-                "body": "{\n\t\"groupId\": {{JSON.stringify(selectAttrGroupToDelete.selectedOptionValue)}}\n}"
+                "body": "{\n\t\"groupId\": {{JSON.stringify(selectAttrGroupToDelete.selectedOptionValue)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -7807,13 +7816,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(selectAttrGroupToDelete.selectedOptionValue)"
+                "JSON.stringify(selectAttrGroupToDelete.selectedOptionValue)",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-30T16:13:02.238Z",
-        "updatedAt": "2024-01-30T16:18:25.703Z",
+        "updatedAt": "2024-02-15T10:49:19.057Z",
         "deleted": false,
         "policies": [
             {
@@ -8320,7 +8330,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T12:47:58.188Z",
-        "updatedAt": "2024-02-14T13:41:10.020Z",
+        "updatedAt": "2024-02-15T13:15:43.481Z",
         "deleted": false,
         "policies": [
             {
@@ -8396,7 +8406,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:17:59.377Z",
-        "updatedAt": "2024-02-14T13:54:00.160Z",
+        "updatedAt": "2024-02-15T13:15:41.399Z",
         "deleted": false,
         "policies": [
             {
