@@ -6,7 +6,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-10-24T14:59:29.274Z",
-        "updatedAt": "2024-01-24T15:04:24.616Z",
+        "updatedAt": "2024-02-21T16:40:43.890Z",
         "deleted": false,
         "policies": [
             {
@@ -30,7 +30,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/sendEmailForResetPassword"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -59,7 +59,7 @@
                         "value": true
                     }
                 ],
-                "path": "/sendEmailForResetPassword",
+                "path": "",
                 "body": "{\n\t\"email\": \"{{InputEmail.text}}\"\n}"
             },
             "dynamicBindingPathList": [
@@ -599,7 +599,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-08T09:31:03.416Z",
-        "updatedAt": "2024-02-21T10:40:37.507Z",
+        "updatedAt": "2024-02-21T15:52:29.171Z",
         "deleted": false,
         "policies": [
             {
@@ -674,7 +674,7 @@
                 "JSON.stringify(field_add_user_role.selectedOptionValue)",
                 "JSON.stringify(attributeUserTable.tableData)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -852,7 +852,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:05:45.060Z",
-        "updatedAt": "2024-02-21T10:40:58.518Z",
+        "updatedAt": "2024-02-21T16:16:37.235Z",
         "deleted": false,
         "policies": [
             {
@@ -928,7 +928,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:02:12.192Z",
-        "updatedAt": "2024-02-21T10:41:17.198Z",
+        "updatedAt": "2024-02-21T16:12:38.741Z",
         "deleted": false,
         "policies": [
             {
@@ -1749,7 +1749,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-10-25T08:45:50.977Z",
-        "updatedAt": "2024-01-24T15:04:31.093Z",
+        "updatedAt": "2024-02-21T16:40:51.705Z",
         "deleted": false,
         "policies": [
             {
@@ -1773,7 +1773,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/resetPassword"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -1802,7 +1802,7 @@
                         "value": true
                     }
                 ],
-                "path": "/resetPassword",
+                "path": "",
                 "body": "{\n\t\"password\": \"{{InputPassword.text}}\",\n\t\"token\": \"{{main.URL.queryParams.token}}\"\n}"
             },
             "dynamicBindingPathList": [
@@ -2079,7 +2079,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T13:08:42.296Z",
-        "updatedAt": "2024-02-21T10:38:59.788Z",
+        "updatedAt": "2024-02-21T16:17:10.905Z",
         "deleted": false,
         "policies": [
             {
@@ -2150,7 +2150,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:54:09.638Z",
-        "updatedAt": "2024-02-21T10:38:48.421Z",
+        "updatedAt": "2024-02-21T16:17:07.005Z",
         "deleted": false,
         "policies": [
             {
@@ -5605,7 +5605,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:49:08.307Z",
-        "updatedAt": "2024-02-21T10:40:25.245Z",
+        "updatedAt": "2024-02-21T16:17:52.641Z",
         "deleted": false,
         "policies": [
             {
@@ -5676,7 +5676,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:27:18.685Z",
-        "updatedAt": "2024-02-21T10:40:29.195Z",
+        "updatedAt": "2024-02-21T16:17:53.887Z",
         "deleted": false,
         "policies": [
             {
@@ -7047,7 +7047,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-02-21T10:37:55.734Z",
+        "updatedAt": "2024-02-21T16:16:57.323Z",
         "deleted": false,
         "policies": [
             {
@@ -7200,7 +7200,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:29:29.176Z",
-        "updatedAt": "2024-02-21T10:40:12.780Z",
+        "updatedAt": "2024-02-21T16:17:48.754Z",
         "deleted": false,
         "policies": [
             {
@@ -7271,7 +7271,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:47:36.113Z",
-        "updatedAt": "2024-02-21T10:40:16.723Z",
+        "updatedAt": "2024-02-21T16:17:50.240Z",
         "deleted": false,
         "policies": [
             {
@@ -7425,7 +7425,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T12:34:48.631Z",
-        "updatedAt": "2024-02-21T10:40:20.964Z",
+        "updatedAt": "2024-02-21T16:17:51.676Z",
         "deleted": false,
         "policies": [
             {
@@ -7496,7 +7496,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T13:50:04.679Z",
-        "updatedAt": "2024-02-21T10:41:02.095Z",
+        "updatedAt": "2024-02-21T16:34:33.403Z",
         "deleted": false,
         "policies": [
             {
@@ -7567,7 +7567,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T13:56:55.091Z",
-        "updatedAt": "2024-02-21T10:41:06.881Z",
+        "updatedAt": "2024-02-21T16:16:39.958Z",
         "deleted": false,
         "policies": [
             {
@@ -7680,7 +7680,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes?atrributesGroupIds={{JSON.stringify(selectAttributeGroups.selectedOptionValues)}}&attributeIds={{JSON.stringify(addUserSelectAttributes.selectedOptionValues)}}"
+                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7699,7 +7699,16 @@
                         "value": "application/json"
                     }
                 ],
-                "queryParameters": [],
+                "queryParameters": [
+                    {
+                        "key": "atrributesGroupIds",
+                        "value": "{{JSON.stringify(selectAttributeGroups.selectedOptionValues)}}"
+                    },
+                    {
+                        "key": "attributeIds",
+                        "value": "{{JSON.stringify(addUserSelectAttributes.selectedOptionValues)}}"
+                    }
+                ],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -7716,19 +7725,21 @@
                     "key": "path"
                 },
                 {
-                    "key": "queryParameters[0].value"
+                    "key": "datasourceUrl"
                 },
                 {
                     "key": "queryParameters[1].value"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "queryParameters[0].value"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
+                "JSON.stringify(selectAttributeGroups.selectedOptionValues)},attributeIds,{{JSON.stringify(addUserSelectAttributes.selectedOptionValues)",
+                "JSON.stringify(addUserSelectAttributes.selectedOptionValues),main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:16:19.836Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(selectAttributeGroups.selectedOptionValues)},attributeIds,{{JSON.stringify(addUserSelectAttributes.selectedOptionValues),2024-01-25T14:48:12.126Z,2024-02-21T16:16:28.277Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:20:43.665Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
                 "JSON.stringify(selectAttributeGroups.selectedOptionValues)",
                 "JSON.stringify(addUserSelectAttributes.selectedOptionValues)"
             ],
@@ -7736,7 +7747,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-25T14:48:12.126Z",
-        "updatedAt": "2024-02-21T10:40:52.843Z",
+        "updatedAt": "2024-02-21T16:20:53.858Z",
         "deleted": false,
         "policies": [
             {
@@ -7849,7 +7860,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes?atrributesGroupIds={{JSON.stringify(editUserModalAttrGroups.selectedOptionValues)}}&attributeIds={{JSON.stringify(editUserModalAttributes.selectedOptionValues)}}"
+                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7863,7 +7874,16 @@
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
                 "headers": [],
-                "queryParameters": [],
+                "queryParameters": [
+                    {
+                        "key": "atrributesGroupIds",
+                        "value": "{{JSON.stringify(editUserModalAttrGroups.selectedOptionValues)}}"
+                    },
+                    {
+                        "key": "attributeIds",
+                        "value": "{{JSON.stringify(editUserModalAttributes.selectedOptionValues)}}"
+                    }
+                ],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -7880,13 +7900,13 @@
                     "key": "path"
                 },
                 {
+                    "key": "datasourceUrl"
+                },
+                {
                     "key": "queryParameters[0].value"
                 },
                 {
                     "key": "queryParameters[1].value"
-                },
-                {
-                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7900,7 +7920,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:18:42.530Z",
-        "updatedAt": "2024-02-21T10:41:13.451Z",
+        "updatedAt": "2024-02-21T16:19:09.679Z",
         "deleted": false,
         "policies": [
             {
@@ -7931,7 +7951,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "{{main.env.nodeUrl}}/updateUser?_id={{Table1.selectedRow._id}}"
+                    "url": "{{main.env.nodeUrl}}/updateUser"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7950,7 +7970,12 @@
                         "value": "application/json"
                     }
                 ],
-                "queryParameters": [],
+                "queryParameters": [
+                    {
+                        "key": "_id",
+                        "value": "{{Table1.selectedRow._id}}"
+                    }
+                ],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7968,10 +7993,10 @@
                     "key": "body"
                 },
                 {
-                    "key": "queryParameters[0].value"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "queryParameters[0].value"
                 }
             ],
             "isValid": true,
@@ -7984,13 +8009,14 @@
                 "JSON.stringify(editUserModalEmail.text)",
                 "JSON.stringify(editUserModalRole.selectedOptionValue)",
                 "JSON.stringify(editUserModalTable.tableData)",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
+                "main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-21T16:07:42.715Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,Table1.selectedRow._id,2024-01-31T15:38:20.105Z,2024-02-21T16:07:44.529Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:38:20.105Z",
-        "updatedAt": "2024-02-21T10:41:21.109Z",
+        "updatedAt": "2024-02-21T16:12:37.283Z",
         "deleted": false,
         "policies": [
             {
@@ -8021,7 +8047,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/loginG"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8056,7 +8082,7 @@
                         "value": true
                     }
                 ],
-                "path": "/loginG"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -8076,7 +8102,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T13:26:42.719Z",
-        "updatedAt": "2024-02-14T14:38:27.735Z",
+        "updatedAt": "2024-02-21T16:40:21.433Z",
         "deleted": false,
         "policies": [
             {
@@ -8318,7 +8344,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:17:59.377Z",
-        "updatedAt": "2024-02-21T10:44:31.971Z",
+        "updatedAt": "2024-02-21T16:16:45.720Z",
         "deleted": false,
         "policies": [
             {
@@ -8389,7 +8415,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:47:44.921Z",
-        "updatedAt": "2024-02-21T10:37:58.983Z",
+        "updatedAt": "2024-02-21T16:16:58.589Z",
         "deleted": false,
         "policies": [
             {
@@ -8420,7 +8446,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAdminEmail"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8444,7 +8470,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAdminEmail"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -8460,7 +8486,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T16:33:58.470Z",
-        "updatedAt": "2024-02-14T17:04:54.432Z",
+        "updatedAt": "2024-02-21T16:39:43.807Z",
         "deleted": false,
         "policies": [
             {
@@ -8541,7 +8567,77 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-16T14:50:18.715Z",
-        "updatedAt": "2024-02-21T10:41:10.255Z",
+        "updatedAt": "2024-02-21T16:34:37.870Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "_id": "65d61368d7438b8fd2130674",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getLogo",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/get_logo"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "AppSettings",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "GET",
+                "headers": [],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-21T15:14:48.315Z",
+        "updatedAt": "2024-02-21T16:16:48.990Z",
         "deleted": false,
         "policies": [
             {

@@ -856,8 +856,8 @@
                                                                                                 "isLoading": false,
                                                                                                 "parentColumnSpace": 6.412353515625,
                                                                                                 "parentRowSpace": 10,
-                                                                                                "leftColumn": 14,
-                                                                                                "rightColumn": 45,
+                                                                                                "leftColumn": 16,
+                                                                                                "rightColumn": 47,
                                                                                                 "topRow": 0,
                                                                                                 "bottomRow": 5,
                                                                                                 "parentId": "4qyncflubr",
@@ -963,8 +963,8 @@
                                                                                                 "isLoading": false,
                                                                                                 "parentColumnSpace": 7.758941650390625,
                                                                                                 "parentRowSpace": 10,
-                                                                                                "leftColumn": 14,
-                                                                                                "rightColumn": 46,
+                                                                                                "leftColumn": 16,
+                                                                                                "rightColumn": 47,
                                                                                                 "topRow": 0,
                                                                                                 "bottomRow": 5,
                                                                                                 "parentId": "blbezpq20s",
@@ -2356,9 +2356,6 @@
                                                     },
                                                     {
                                                         "key": "primaryColumns.userAttributes.computedValue"
-                                                    },
-                                                    {
-                                                        "key": "primaryColumns.childModules.computedValue"
                                                     }
                                                 ],
                                                 "primaryColumns": {
@@ -2480,23 +2477,6 @@
                                                         "isDerived": false,
                                                         "label": "userAttributes",
                                                         "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.userAttributes.map(e=>e.attributeName)))}}"
-                                                    },
-                                                    "childModules": {
-                                                        "index": 7,
-                                                        "width": 150,
-                                                        "id": "childModules",
-                                                        "horizontalAlignment": "LEFT",
-                                                        "verticalAlignment": "CENTER",
-                                                        "columnType": "text",
-                                                        "textSize": "PARAGRAPH",
-                                                        "enableFilter": true,
-                                                        "enableSort": true,
-                                                        "isVisible": true,
-                                                        "isDisabled": false,
-                                                        "isCellVisible": true,
-                                                        "isDerived": false,
-                                                        "label": "childModules",
-                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.childModules))}}"
                                                     }
                                                 },
                                                 "derivedColumns": {},
@@ -2513,8 +2493,7 @@
                                                     "icon",
                                                     "userAttributes",
                                                     "deleted",
-                                                    "isParent",
-                                                    "childModules"
+                                                    "isParent"
                                                 ],
                                                 "enableClientSideSearch": true,
                                                 "isVisibleSearch": true,
@@ -5058,7 +5037,7 @@
                                                         "textSize": "PARAGRAPH",
                                                         "enableFilter": true,
                                                         "enableSort": true,
-                                                        "isVisible": true,
+                                                        "isVisible": false,
                                                         "isDisabled": false,
                                                         "isCellVisible": true,
                                                         "isDerived": false,
@@ -5317,7 +5296,7 @@
                                                 ],
                                                 "boxShadow": "VARIANT3",
                                                 "iconAlign": "left",
-                                                "onClick": "{{showModal('deleteAttributeGroupModal')}}",
+                                                "onClick": "{{getAttributeGroupsForSelect.run(() => showModal('deleteAttributeGroupModal'), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "isDisabled"
@@ -5467,41 +5446,6 @@
                                                 "parentId": "5goubwl3lo",
                                                 "backgroundColor": "#D5E8FA",
                                                 "dynamicBindingPathList": [],
-                                                "dynamicTriggerPathList": []
-                                            },
-                                            {
-                                                "isVisible": true,
-                                                "text": "{{main.store.role_id}}",
-                                                "fontSize": "PARAGRAPH",
-                                                "fontStyle": "BOLD",
-                                                "textAlign": "LEFT",
-                                                "textColor": "#231F20",
-                                                "truncateButtonColor": "#FFC13D",
-                                                "widgetName": "Text14",
-                                                "shouldTruncate": false,
-                                                "overflow": "NONE",
-                                                "version": 1,
-                                                "animateLoading": true,
-                                                "type": "TEXT_WIDGET",
-                                                "hideCard": false,
-                                                "displayName": "Text",
-                                                "key": "cras2oh8s5",
-                                                "iconSVG": "/static/media/icon.97c59b52.svg",
-                                                "widgetId": "42v8525wi3",
-                                                "renderMode": "CANVAS",
-                                                "isLoading": false,
-                                                "parentColumnSpace": 14.017578125,
-                                                "parentRowSpace": 10,
-                                                "leftColumn": 26,
-                                                "rightColumn": 42,
-                                                "topRow": 10,
-                                                "bottomRow": 14,
-                                                "parentId": "5goubwl3lo",
-                                                "dynamicBindingPathList": [
-                                                    {
-                                                        "key": "text"
-                                                    }
-                                                ],
                                                 "dynamicTriggerPathList": []
                                             }
                                         ],
@@ -6053,7 +5997,7 @@
                                                 ],
                                                 "borderRadius": "ROUNDED",
                                                 "boxShadow": "VARIANT3",
-                                                "onClick": "{{deleteAttributeGroup.run(() => getAttributes.run(()=>closeModal(\"ModalCreateAttribute\")), () => {})}}",
+                                                "onClick": "{{deleteAttributeGroup.run(() => getAttributes.run(()=>closeModal(\"deleteAttributeGroupModal\")), () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
@@ -6154,7 +6098,6 @@
                         "ButtonGroup1",
                         "Text12",
                         "Text13",
-                        "Text14",
                         "ModalAddModule",
                         "Canvas3",
                         "Form3",
@@ -7363,12 +7306,12 @@
                                                         "textSize": "PARAGRAPH",
                                                         "enableFilter": true,
                                                         "enableSort": true,
-                                                        "isVisible": true,
+                                                        "isVisible": false,
                                                         "isDisabled": false,
                                                         "isCellVisible": true,
                                                         "isDerived": false,
                                                         "label": "Attributes",
-                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.attributes.map(e=>e.attributeName)))}}"
+                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.attributes))}}"
                                                     },
                                                     "role_items": {
                                                         "index": 8,
@@ -7710,17 +7653,17 @@
                                                                     }
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
-                                                                "onClick": "{{createUser.run(() => (getUsers.run(), closeModal('ModalCreateUser')), () => {})}}",
+                                                                "onClick": "{{createUser.run(() => (getUsers.run(),closeModal(\"ModalCreateUser\")), () => {})}}",
                                                                 "classStyle": "setBtnAlmostRight",
                                                                 "iconName": "new-person",
                                                                 "iconAlign": "left",
                                                                 "placement": "CENTER",
                                                                 "dynamicPropertyPathList": [
                                                                     {
-                                                                        "key": "onClick"
+                                                                        "key": "disabledWhenInvalid"
                                                                     },
                                                                     {
-                                                                        "key": "disabledWhenInvalid"
+                                                                        "key": "onClick"
                                                                     }
                                                                 ],
                                                                 "boxShadow": "VARIANT3"
@@ -8027,7 +7970,7 @@
                                                                 ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "labelStyle": "",
-                                                                "classStyle": "setWidthNintyEightPercent "
+                                                                "classStyle": ""
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -8045,7 +7988,7 @@
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_textInput",
+                                                                "classStyle": "",
                                                                 "inputType": "TEXT",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -8084,7 +8027,7 @@
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_textInput",
+                                                                "classStyle": "",
                                                                 "inputType": "TEXT",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -8122,7 +8065,7 @@
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_textInput",
+                                                                "classStyle": "",
                                                                 "inputType": "EMAIL",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -8161,7 +8104,7 @@
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_textInput",
+                                                                "classStyle": "",
                                                                 "inputType": "PASSWORD",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -8206,7 +8149,7 @@
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
-                                                                "classStyle": "setWidthNintyEightPercent addUserModal_textInput",
+                                                                "classStyle": "",
                                                                 "inputType": "PASSWORD",
                                                                 "type": "INPUT_WIDGET_V2",
                                                                 "hideCard": false,
@@ -8346,7 +8289,7 @@
                                                                         "key": "onOptionChange"
                                                                     }
                                                                 ],
-                                                                "classStyle": "setWidthNintyEightPercent ",
+                                                                "classStyle": "",
                                                                 "labelStyle": "",
                                                                 "onOptionChange": "{{getAllAttributesForAddUserTabl.run()}}"
                                                             },
@@ -8391,7 +8334,7 @@
                                                                         "key": "onOptionChange"
                                                                     }
                                                                 ],
-                                                                "classStyle": "setWidthNintyEightPercent ",
+                                                                "classStyle": " ",
                                                                 "labelStyle": "",
                                                                 "onOptionChange": "{{getAllAttributesForAddUserTabl.run()}}"
                                                             },
@@ -9191,7 +9134,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "https://{{main.env.nodeUrl}}/LoginGoogle",
+                                                                                "placeholderText": "{{main.env.nodeUrl}}/LoginGoogle",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "isDisabled"
@@ -9289,7 +9232,7 @@
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
-                                                                                "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                                                                                "defaultImage": "{{main.env.nodeUrl}}/get_logo",
                                                                                 "imageShape": "RECTANGLE",
                                                                                 "maxZoomLevel": 1,
                                                                                 "enableRotation": false,
@@ -9317,6 +9260,9 @@
                                                                                 "dynamicBindingPathList": [
                                                                                     {
                                                                                         "key": "image"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "defaultImage"
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": []
@@ -9327,14 +9273,14 @@
                                                                                 "valueRes": null,
                                                                                 "classStyle": "",
                                                                                 "textStyle": "LABEL",
-                                                                                "uploadUrl": "https://{{main.env.nodeUrl}}/icons",
+                                                                                "uploadUrl": "{{main.env.nodeUrl}}/icons",
                                                                                 "validType": "",
                                                                                 "textAlign": "LEFT",
                                                                                 "response": null,
                                                                                 "files": [],
                                                                                 "types": [],
                                                                                 "titles": [],
-                                                                                "completeRes": "{{getLogos.run()}}",
+                                                                                "completeRes": "{{getLogo.run(()=>showAlert('Settings saved. You need to reload the page to see the changes','success'))}}",
                                                                                 "version": 1,
                                                                                 "type": "FILESENDER_WIDGET",
                                                                                 "hideCard": false,
@@ -9370,6 +9316,9 @@
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "isVisible"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "completeRes"
                                                                                     }
                                                                                 ]
                                                                             },
