@@ -48,14 +48,6 @@
         {
             "_id": "PasswordChanged",
             "isDefault": false
-        },
-        {
-            "_id": "other1",
-            "isDefault": false
-        },
-        {
-            "_id": "Other",
-            "isDefault": false
         }
     ],
     "policies": [
@@ -1844,7 +1836,7 @@
                             "enableRotation": false,
                             "enableDownload": false,
                             "objectFit": "contain",
-                            "image": "{{getLogos.data}}",
+                            "image": "https://{{main.env.nodeUrl}}/get_logo",
                             "widgetName": "Image2",
                             "version": 1,
                             "animateLoading": true,

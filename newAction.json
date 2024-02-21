@@ -768,7 +768,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:09:27.661Z",
-        "updatedAt": "2024-02-19T09:45:09.425Z",
+        "updatedAt": "2024-02-20T17:53:26.127Z",
         "deleted": false,
         "policies": [
             {
@@ -851,7 +851,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:05:45.060Z",
-        "updatedAt": "2024-01-24T15:04:05.240Z",
+        "updatedAt": "2024-02-20T17:57:15.348Z",
         "deleted": false,
         "policies": [
             {
@@ -904,7 +904,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAllRoles"
+                "path": "/getRoles"
             },
             "dynamicBindingPathList": [
                 {
@@ -1907,7 +1907,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:07:56.350Z",
-        "updatedAt": "2024-02-19T16:14:38.474Z",
+        "updatedAt": "2024-02-20T13:54:13.463Z",
         "deleted": false,
         "policies": [
             {
@@ -1951,7 +1951,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"childModule\":\"{{childModule_field.selectedOptionValue}}\",\n\t\"parentModule\":\"{{parentModule1_field.selectedOptionValue}}\",\n\t\"position\":{{positionChild.text}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"childModule\":\"{{childModule_field.selectedOptionValue}}\",\n  \"parentModule\":\"{{parentModule1_field.selectedOptionValue}}\",\n  \"position\":{{positionChild.text}},\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -1965,13 +1965,13 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
-                },
-                {
                     "key": "path"
                 },
                 {
                     "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -1994,7 +1994,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:49:55.580Z",
-        "updatedAt": "2024-02-15T13:14:35.525Z",
+        "updatedAt": "2024-02-20T13:54:07.379Z",
         "deleted": false,
         "policies": [
             {
@@ -2048,14 +2048,14 @@
                     }
                 ],
                 "path": "/createParentModule",
-                "body": "{\n\t\"name\": \"{{name_field.text}}\",\n\t\"position\": {{position_field.text}},\n\t\"icon\": \"{{icon_field.text}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
+                "body": "{\n  \"name\": \"{{name_field.text}}\",\n  \"position\": {{position_field.text}},\n  \"icon\": \"{{icon_field.text}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -2078,7 +2078,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T13:08:42.296Z",
-        "updatedAt": "2024-02-15T13:35:52.521Z",
+        "updatedAt": "2024-02-20T13:44:14.820Z",
         "deleted": false,
         "policies": [
             {
@@ -2149,7 +2149,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:54:09.638Z",
-        "updatedAt": "2024-02-19T11:56:09.011Z",
+        "updatedAt": "2024-02-20T13:55:53.687Z",
         "deleted": false,
         "policies": [
             {
@@ -2180,7 +2180,7 @@
                 "pluginId": "API",
                 "messages": []
             },
-            "executeOnLoad": true,
+            "executeOnLoad": false,
             "pageId": "Page Management",
             "actionConfiguration": {
                 "timeoutInMillisecond": 10000,
@@ -2220,7 +2220,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:13:12.277Z",
-        "updatedAt": "2024-02-15T13:14:40.037Z",
+        "updatedAt": "2024-02-20T15:16:38.721Z",
         "deleted": false,
         "policies": [
             {
@@ -2264,7 +2264,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\":\"{{TableParent.selectedRow._id}}\",\n\t\"childModule_id\":\"{{TableChild.selectedRow.name}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"_id\":\"{{TableParent.selectedRow._id}}\",\n  \"childModule_id\":\"{{childTable.selectedRow.name}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -2278,10 +2278,10 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -2290,7 +2290,8 @@
                 "main.env.nodeUrl",
                 "TableParent.selectedRow._id",
                 "TableChild.selectedRow.name",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
+                "childTable.selectedRow.name"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -5522,7 +5523,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:26:27.553Z",
-        "updatedAt": "2024-02-15T10:48:39.445Z",
+        "updatedAt": "2024-02-20T17:46:47.360Z",
         "deleted": false,
         "policies": [
             {
@@ -5604,7 +5605,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:49:08.307Z",
-        "updatedAt": "2024-01-24T15:03:18.596Z",
+        "updatedAt": "2024-02-20T14:22:00.720Z",
         "deleted": false,
         "policies": [
             {
@@ -5675,7 +5676,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:27:18.685Z",
-        "updatedAt": "2024-02-02T13:52:03.108Z",
+        "updatedAt": "2024-02-21T08:34:12.419Z",
         "deleted": false,
         "policies": [
             {
@@ -6504,7 +6505,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:51:48.152Z",
-        "updatedAt": "2024-02-15T13:14:55.957Z",
+        "updatedAt": "2024-02-20T13:54:27.803Z",
         "deleted": false,
         "policies": [
             {
@@ -6548,7 +6549,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"name\": \"{{name_field_edit.text}}\",\n\t\"position\": {{position_field_edit.text}},\n\t\"icon\": \"{{icon_field_edit.text}}\",\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"name\": \"{{name_field_edit.text}}\",\n  \"position\": {{position_field_edit.text}},\n  \"icon\": \"{{icon_field_edit.text}}\",\n  \"_id\": \"{{TableParent.selectedRow._id}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -6562,10 +6563,10 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -6589,7 +6590,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:55:13.835Z",
-        "updatedAt": "2024-02-15T13:14:43.971Z",
+        "updatedAt": "2024-02-20T13:53:51.675Z",
         "deleted": false,
         "policies": [
             {
@@ -6633,7 +6634,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"_id\": \"{{TableParent.selectedRow._id}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -6647,10 +6648,10 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -6671,7 +6672,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T17:04:12.998Z",
-        "updatedAt": "2024-02-15T13:14:51.261Z",
+        "updatedAt": "2024-02-20T15:39:14.719Z",
         "deleted": false,
         "policies": [
             {
@@ -6715,7 +6716,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"_id\": \"{{TableParent.selectedRow._id}}\",\n\t\"position\": \"{{positionChild_edit.text}}\",\n\t\"name\": \"{{TableChild.selectedRow.name}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"_id\": \"{{main.store._id}}\",\n  \"position\": \"{{positionChild_edit.text}}\",\n  \"name\": \"{{childTable.selectedRow.name}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -6729,10 +6730,10 @@
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 }
             ],
             "isValid": true,
@@ -6741,8 +6742,9 @@
                 "main.env.nodeUrl",
                 "TableParent.selectedRow._id",
                 "positionChild_edit.text",
-                "TableChild.selectedRow.name",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
+                "childTable.selectedRow.name",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
+                "main.store._id"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -8119,77 +8121,6 @@
         ]
     },
     {
-        "_id": "65bd046f3f8e8a9ddfec3146",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLogos",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "AppSettings",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": "/get_logo"
-            },
-            "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                }
-            ],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2024-02-02T15:04:15.201Z",
-        "updatedAt": "2024-02-12T17:57:10.664Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
         "_id": "65bd05473f8e8a9ddfec3147",
         "applicationId": "jetsondashboard",
         "organizationId": "Org",
@@ -8547,274 +8478,6 @@
         },
         "createdAt": "2024-02-08T16:33:58.470Z",
         "updatedAt": "2024-02-14T17:04:54.432Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "65ca5bfdf0cd6acacf3b5223",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLogo",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Login",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": "/get_logo"
-            },
-            "dynamicBindingPathList": [],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2024-02-12T17:57:17.870Z",
-        "updatedAt": "2024-02-12T17:58:13.661Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "65cb95d0f0cd6acacf3b5224",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLogos",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "User Management",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": "/get_logo"
-            },
-            "dynamicBindingPathList": [],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2024-02-13T16:16:16.458Z",
-        "updatedAt": "2024-02-13T16:18:06.270Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "65cb95eaf0cd6acacf3b5225",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLogos",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Page Management",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": "/get_logo"
-            },
-            "dynamicBindingPathList": [],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2024-02-13T16:16:42.087Z",
-        "updatedAt": "2024-02-13T16:18:19.613Z",
-        "deleted": false,
-        "policies": [
-            {
-                "permission": "read:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "manage:actions",
-                "groups": [],
-                "users": []
-            },
-            {
-                "permission": "execute:actions",
-                "groups": [],
-                "users": []
-            }
-        ]
-    },
-    {
-        "_id": "65cb95faf0cd6acacf3b5226",
-        "applicationId": "jetsondashboard",
-        "organizationId": "Org",
-        "pluginType": "API",
-        "pluginId": "API",
-        "Action": {
-            "name": "getLogos",
-            "datasource": {
-                "name": "DEFAULT_REST_DATASOURCE",
-                "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
-                },
-                "invalids": [],
-                "isValid": true,
-                "pluginId": "API",
-                "messages": []
-            },
-            "executeOnLoad": true,
-            "pageId": "Role Management",
-            "actionConfiguration": {
-                "timeoutInMillisecond": 10000,
-                "encodeParamsToggle": true,
-                "httpMethod": "GET",
-                "headers": [],
-                "queryParameters": [],
-                "bodyFormData": [],
-                "formData": {
-                    "apiContentType": "none"
-                },
-                "pluginSpecifiedTemplates": [
-                    {
-                        "value": true
-                    }
-                ],
-                "path": "/get_logo"
-            },
-            "dynamicBindingPathList": [],
-            "isValid": true,
-            "invalids": [],
-            "jsonPathKeys": [
-                "main.env.nodeUrl"
-            ],
-            "userSetOnLoad": false,
-            "confirmBeforeExecute": false
-        },
-        "createdAt": "2024-02-13T16:16:58.366Z",
-        "updatedAt": "2024-02-13T16:18:32.380Z",
         "deleted": false,
         "policies": [
             {
