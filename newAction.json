@@ -550,7 +550,8 @@
         "jsonPathKeys": [
             "async () => {\n\t\tawait createUser.run();\n\t\tcloseModal('ModalCreateUser');\n\t\tgetUsers.run();\n\t}"
         ],
-        "pluginType": "JS"
+        "pluginType": "JS",
+        "id": "636a250dc2e17400119dc7f6"
     },
     {
         "_id": "6364e18ec2e17400119dc7f1",
@@ -559,7 +560,7 @@
         "organizationId": "Org",
         "executeOnLoad": false,
         "actionConfiguration": {
-            "body": "async () => {\n\t\tawait editUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t}",
+            "body": "async () => {\n\t\tawait changeUserRole.run();\n\t\tcloseModal('ModalEditRole');\n\t\tgetUsers.run();\n\t}",
             "isAsync": true,
             "timeoutInMillisecond": 10000,
             "jsArguments": [],
@@ -598,7 +599,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-08T09:31:03.416Z",
-        "updatedAt": "2024-02-19T09:13:58.842Z",
+        "updatedAt": "2024-02-21T10:40:37.507Z",
         "deleted": false,
         "policies": [
             {
@@ -622,7 +623,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/addUser"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -652,7 +653,7 @@
                         "value": true
                     }
                 ],
-                "path": "/addUser"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -673,7 +674,7 @@
                 "JSON.stringify(field_add_user_role.selectedOptionValue)",
                 "JSON.stringify(attributeUserTable.tableData)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl"
+                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,https://{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -686,7 +687,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-10-14T10:51:21.173Z",
-        "updatedAt": "2024-02-16T14:58:28.744Z",
+        "updatedAt": "2024-02-21T10:40:40.829Z",
         "deleted": false,
         "policies": [
             {
@@ -710,7 +711,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteUser"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -739,7 +740,7 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteUser",
+                "path": "",
                 "body": "{\n\t\"_id\": \"{{Table1.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
@@ -768,7 +769,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:09:27.661Z",
-        "updatedAt": "2024-02-20T17:53:26.127Z",
+        "updatedAt": "2024-02-21T10:44:24.043Z",
         "deleted": false,
         "policies": [
             {
@@ -788,11 +789,11 @@
             }
         ],
         "Action": {
-            "name": "editUserRole",
+            "name": "changeUserRole",
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/editUserRole"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -822,7 +823,7 @@
                         "value": true
                     }
                 ],
-                "path": "/editUserRole"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -851,7 +852,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:05:45.060Z",
-        "updatedAt": "2024-02-20T17:57:15.348Z",
+        "updatedAt": "2024-02-21T10:40:58.518Z",
         "deleted": false,
         "policies": [
             {
@@ -875,7 +876,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getRoles"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -904,7 +905,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getRoles"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -927,7 +928,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:02:12.192Z",
-        "updatedAt": "2024-02-15T14:39:31.007Z",
+        "updatedAt": "2024-02-21T10:41:17.198Z",
         "deleted": false,
         "policies": [
             {
@@ -951,7 +952,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getUsers"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -975,7 +976,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getUsers"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -1907,7 +1908,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:07:56.350Z",
-        "updatedAt": "2024-02-20T13:54:13.463Z",
+        "updatedAt": "2024-02-21T10:38:17.773Z",
         "deleted": false,
         "policies": [
             {
@@ -1931,7 +1932,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/createChildModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -1961,17 +1962,17 @@
                         "value": true
                     }
                 ],
-                "path": "/createChildModule"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
                     "key": "path"
                 },
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -1994,7 +1995,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:49:55.580Z",
-        "updatedAt": "2024-02-20T13:54:07.379Z",
+        "updatedAt": "2024-02-21T10:38:21.125Z",
         "deleted": false,
         "policies": [
             {
@@ -2018,7 +2019,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/createParentModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -2047,15 +2048,15 @@
                         "value": true
                     }
                 ],
-                "path": "/createParentModule",
+                "path": "",
                 "body": "{\n  \"name\": \"{{name_field.text}}\",\n  \"position\": {{position_field.text}},\n  \"icon\": \"{{icon_field.text}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -2078,7 +2079,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T13:08:42.296Z",
-        "updatedAt": "2024-02-20T13:44:14.820Z",
+        "updatedAt": "2024-02-21T10:38:59.788Z",
         "deleted": false,
         "policies": [
             {
@@ -2149,7 +2150,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T12:54:09.638Z",
-        "updatedAt": "2024-02-20T13:55:53.687Z",
+        "updatedAt": "2024-02-21T10:38:48.421Z",
         "deleted": false,
         "policies": [
             {
@@ -2173,7 +2174,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getModules"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -2197,7 +2198,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getModules"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -2220,7 +2221,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:13:12.277Z",
-        "updatedAt": "2024-02-20T15:16:38.721Z",
+        "updatedAt": "2024-02-21T10:38:24.681Z",
         "deleted": false,
         "policies": [
             {
@@ -2244,7 +2245,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteChildModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -2274,14 +2275,14 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteChildModule"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -2289,9 +2290,8 @@
             "jsonPathKeys": [
                 "main.env.nodeUrl",
                 "TableParent.selectedRow._id",
-                "TableChild.selectedRow.name",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "childTable.selectedRow.name"
+                "childTable.selectedRow.name",
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -2304,7 +2304,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-10-19T08:57:29.377Z",
-        "updatedAt": "2024-01-24T15:01:14.707Z",
+        "updatedAt": "2024-02-21T10:38:09.931Z",
         "deleted": false,
         "policies": [
             {
@@ -2328,7 +2328,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/signout"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -2357,7 +2357,7 @@
                         "value": true
                     }
                 ],
-                "path": "/signout",
+                "path": "",
                 "body": ""
             },
             "dynamicBindingPathList": [
@@ -2381,7 +2381,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:13:14.157Z",
-        "updatedAt": "2024-01-24T15:01:10.057Z",
+        "updatedAt": "2024-02-21T10:38:02.617Z",
         "deleted": false,
         "policies": [
             {
@@ -2405,7 +2405,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/login"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -2435,7 +2435,7 @@
                         "value": true
                     }
                 ],
-                "path": "/login"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -5438,7 +5438,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:52:15.502Z",
-        "updatedAt": "2024-02-15T17:09:00.151Z",
+        "updatedAt": "2024-02-21T10:39:44.206Z",
         "deleted": false,
         "policies": [
             {
@@ -5462,7 +5462,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/addModuleToRole"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -5491,7 +5491,7 @@
                         "value": true
                     }
                 ],
-                "path": "/addModuleToRole",
+                "path": "",
                 "body": "{\n\t\"_id\":\"{{roles_table.selectedRow._id}}\",\n\t\"moduleValue\": {{modules_field.selectedOptionValues}},\n\t\"moduleName\": {{modules_field.selectedOptionLabels}},\n\t\"options\": {{options_switch.selectedValues}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
@@ -5523,7 +5523,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:26:27.553Z",
-        "updatedAt": "2024-02-20T17:46:47.360Z",
+        "updatedAt": "2024-02-21T10:39:54.745Z",
         "deleted": false,
         "policies": [
             {
@@ -5547,7 +5547,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/createRole"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -5577,7 +5577,7 @@
                         "value": true
                     }
                 ],
-                "path": "/createRole"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -5605,7 +5605,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:49:08.307Z",
-        "updatedAt": "2024-02-20T14:22:00.720Z",
+        "updatedAt": "2024-02-21T10:40:25.245Z",
         "deleted": false,
         "policies": [
             {
@@ -5629,7 +5629,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getModules"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -5653,7 +5653,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getModules"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -5676,7 +5676,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:27:18.685Z",
-        "updatedAt": "2024-02-21T08:34:12.419Z",
+        "updatedAt": "2024-02-21T10:40:29.195Z",
         "deleted": false,
         "policies": [
             {
@@ -5700,7 +5700,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getRoles"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -5729,7 +5729,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getRoles"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -6505,7 +6505,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:51:48.152Z",
-        "updatedAt": "2024-02-20T13:54:27.803Z",
+        "updatedAt": "2024-02-21T10:38:57.778Z",
         "deleted": false,
         "policies": [
             {
@@ -6529,7 +6529,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/updateParentModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6559,14 +6559,14 @@
                         "value": true
                     }
                 ],
-                "path": "/updateParentModule"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -6590,7 +6590,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:55:13.835Z",
-        "updatedAt": "2024-02-20T13:53:51.675Z",
+        "updatedAt": "2024-02-21T10:38:27.863Z",
         "deleted": false,
         "policies": [
             {
@@ -6614,7 +6614,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6644,14 +6644,14 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteModule"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -6672,7 +6672,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T17:04:12.998Z",
-        "updatedAt": "2024-02-20T15:39:14.719Z",
+        "updatedAt": "2024-02-21T10:38:52.810Z",
         "deleted": false,
         "policies": [
             {
@@ -6696,7 +6696,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/updateChildModule"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6726,25 +6726,24 @@
                         "value": true
                     }
                 ],
-                "path": "/updateChildModule"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "TableParent.selectedRow._id",
+                "main.store._id",
                 "positionChild_edit.text",
                 "childTable.selectedRow.name",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.store._id"
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -6757,7 +6756,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-22T10:57:53.258Z",
-        "updatedAt": "2024-02-09T15:52:27.878Z",
+        "updatedAt": "2024-02-21T10:40:08.941Z",
         "deleted": false,
         "policies": [
             {
@@ -6781,7 +6780,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteRole"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6810,7 +6809,7 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteRole",
+                "path": "",
                 "body": "{\n\t\"_id\": \"{{roles_table.selectedRow._id}}\",\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
@@ -6839,7 +6838,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-22T13:23:38.662Z",
-        "updatedAt": "2024-02-09T15:54:19.716Z",
+        "updatedAt": "2024-02-21T10:40:05.270Z",
         "deleted": false,
         "policies": [
             {
@@ -6863,7 +6862,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteModuleFromRole"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6892,7 +6891,7 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteModuleFromRole",
+                "path": "",
                 "body": "{\n\t\"_id\": \"{{roles_table.selectedRow._id}}\",\n\t\"moduleId\": {{modules_field_delete.selectedOptionValues}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
@@ -6926,7 +6925,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/makeSetting"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -6955,15 +6954,15 @@
                         "value": true
                     }
                 ],
-                "path": "/makeSetting",
+                "path": "",
                 "body": "{\n\t\"email\":{{JSON.stringify(setUpAppLogin.text)}},\n\t\"password\": {{JSON.stringify(setUpAppPass.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -6977,7 +6976,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:18:32.543Z",
-        "updatedAt": "2024-02-19T10:51:43.110Z",
+        "updatedAt": "2024-02-21T10:38:06.049Z",
         "deleted": false,
         "policies": [
             {
@@ -7008,7 +7007,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/checkData"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7032,7 +7031,7 @@
                         "value": true
                     }
                 ],
-                "path": "/checkData"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7048,7 +7047,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-02-19T10:51:49.371Z",
+        "updatedAt": "2024-02-21T10:37:55.734Z",
         "deleted": false,
         "policies": [
             {
@@ -7079,7 +7078,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/createAttributeGroup"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7108,15 +7107,15 @@
                         "value": true
                     }
                 ],
-                "path": "/createAttributeGroup",
+                "path": "",
                 "body": "{\n\t\"name\": {{JSON.stringify(attributeGroup_name_field.text)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7130,7 +7129,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:17:21.966Z",
-        "updatedAt": "2024-02-15T13:15:16.440Z",
+        "updatedAt": "2024-02-21T10:39:50.952Z",
         "deleted": false,
         "policies": [
             {
@@ -7161,7 +7160,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAttributeGroups"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7185,7 +7184,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAttributeGroups"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7201,7 +7200,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:29:29.176Z",
-        "updatedAt": "2024-02-16T13:59:05.663Z",
+        "updatedAt": "2024-02-21T10:40:12.780Z",
         "deleted": false,
         "policies": [
             {
@@ -7232,7 +7231,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAttributeGroupsForSelect"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7256,7 +7255,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAttributeGroupsForSelect"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7272,7 +7271,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T10:47:36.113Z",
-        "updatedAt": "2024-02-19T09:08:51.883Z",
+        "updatedAt": "2024-02-21T10:40:16.723Z",
         "deleted": false,
         "policies": [
             {
@@ -7303,7 +7302,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/createAttribute"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7332,15 +7331,15 @@
                         "value": true
                     }
                 ],
-                "path": "/createAttribute",
+                "path": "",
                 "body": "{\n\t\"name\": {{JSON.stringify(attribute_name_field.text)}},\n\t\"parentGroupId\": {{JSON.stringify(selectAttributeGroup.selectedOptionValue)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7355,7 +7354,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T12:31:04.549Z",
-        "updatedAt": "2024-02-15T13:14:08.048Z",
+        "updatedAt": "2024-02-21T10:39:47.501Z",
         "deleted": false,
         "policies": [
             {
@@ -7386,7 +7385,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAttributes"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7410,7 +7409,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAttributes"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7426,7 +7425,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T12:34:48.631Z",
-        "updatedAt": "2024-02-16T13:59:04.335Z",
+        "updatedAt": "2024-02-21T10:40:20.964Z",
         "deleted": false,
         "policies": [
             {
@@ -7457,7 +7456,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAttributeGroupsForSelect"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7481,7 +7480,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAttributeGroupsForSelect"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7497,7 +7496,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T13:50:04.679Z",
-        "updatedAt": "2024-02-19T09:10:00.966Z",
+        "updatedAt": "2024-02-21T10:41:02.095Z",
         "deleted": false,
         "policies": [
             {
@@ -7528,7 +7527,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAttributesForSelect"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7552,7 +7551,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getAttributesForSelect"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -7568,7 +7567,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-24T13:56:55.091Z",
-        "updatedAt": "2024-02-19T09:09:57.648Z",
+        "updatedAt": "2024-02-21T10:41:06.881Z",
         "deleted": false,
         "policies": [
             {
@@ -7599,7 +7598,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteAttribute"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7629,14 +7628,14 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteAttribute"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7650,7 +7649,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-25T13:52:30.217Z",
-        "updatedAt": "2024-02-15T10:49:13.105Z",
+        "updatedAt": "2024-02-21T10:39:57.871Z",
         "deleted": false,
         "policies": [
             {
@@ -7681,7 +7680,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes?atrributesGroupIds={{JSON.stringify(selectAttributeGroups.selectedOptionValues)}}&attributeIds={{JSON.stringify(addUserSelectAttributes.selectedOptionValues)}}"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7700,16 +7699,7 @@
                         "value": "application/json"
                     }
                 ],
-                "queryParameters": [
-                    {
-                        "key": "atrributesGroupIds",
-                        "value": "{{JSON.stringify(selectAttributeGroups.selectedOptionValues)}}"
-                    },
-                    {
-                        "key": "attributeIds",
-                        "value": "{{JSON.stringify(addUserSelectAttributes.selectedOptionValues)}}"
-                    }
-                ],
+                "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -7719,12 +7709,9 @@
                         "value": true
                     }
                 ],
-                "path": "/getUniqueAttributes"
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "path"
                 },
@@ -7733,6 +7720,9 @@
                 },
                 {
                     "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7746,7 +7736,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-25T14:48:12.126Z",
-        "updatedAt": "2024-02-19T16:00:06.752Z",
+        "updatedAt": "2024-02-21T10:40:52.843Z",
         "deleted": false,
         "policies": [
             {
@@ -7777,7 +7767,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/deleteAttributeGroup"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7806,15 +7796,15 @@
                         "value": true
                     }
                 ],
-                "path": "/deleteAttributeGroup",
+                "path": "",
                 "body": "{\n\t\"groupId\": {{JSON.stringify(selectAttrGroupToDelete.selectedOptionValue)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7828,7 +7818,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-30T16:13:02.238Z",
-        "updatedAt": "2024-02-15T15:53:11.093Z",
+        "updatedAt": "2024-02-21T10:40:01.353Z",
         "deleted": false,
         "policies": [
             {
@@ -7859,7 +7849,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getUniqueAttributes?atrributesGroupIds={{JSON.stringify(editUserModalAttrGroups.selectedOptionValues)}}&attributeIds={{JSON.stringify(editUserModalAttributes.selectedOptionValues)}}"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7873,16 +7863,7 @@
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
                 "headers": [],
-                "queryParameters": [
-                    {
-                        "key": "atrributesGroupIds",
-                        "value": "{{JSON.stringify(editUserModalAttrGroups.selectedOptionValues)}}"
-                    },
-                    {
-                        "key": "attributeIds",
-                        "value": "{{JSON.stringify(editUserModalAttributes.selectedOptionValues)}}"
-                    }
-                ],
+                "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "application/json"
@@ -7892,12 +7873,9 @@
                         "value": true
                     }
                 ],
-                "path": "/getUniqueAttributes"
+                "path": ""
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "path"
                 },
@@ -7906,6 +7884,9 @@
                 },
                 {
                     "key": "queryParameters[1].value"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -7919,7 +7900,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:18:42.530Z",
-        "updatedAt": "2024-02-19T16:03:18.726Z",
+        "updatedAt": "2024-02-21T10:41:13.451Z",
         "deleted": false,
         "policies": [
             {
@@ -7950,7 +7931,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/updateUser?_id={{Table1.selectedRow._id}}"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -7969,12 +7950,7 @@
                         "value": "application/json"
                     }
                 ],
-                "queryParameters": [
-                    {
-                        "value": "{{Table1.selectedRow._id}}",
-                        "key": "_id"
-                    }
-                ],
+                "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -7984,18 +7960,18 @@
                         "value": true
                     }
                 ],
-                "path": "/updateUser",
+                "path": "",
                 "body": "{\t\n\t\"firstname\": {{JSON.stringify(editUserModalName.text)}},\n\t\"lastname\": {{JSON.stringify(editUserModalSurname.text)}},\n\t\"email\": {{JSON.stringify(editUserModalEmail.text)}},\t\n\t\"role\": {{JSON.stringify(editUserModalRole.selectedOptionValue)}},\n\t\"attributes\": {{JSON.stringify(editUserModalTable.tableData)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
-                {
-                    "key": "datasourceUrl"
-                },
                 {
                     "key": "body"
                 },
                 {
                     "key": "queryParameters[0].value"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -8014,7 +7990,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:38:20.105Z",
-        "updatedAt": "2024-02-16T10:43:17.655Z",
+        "updatedAt": "2024-02-21T10:41:21.109Z",
         "deleted": false,
         "policies": [
             {
@@ -8131,7 +8107,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/icons"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8160,12 +8136,15 @@
                         "value": true
                     }
                 ],
-                "path": "/icons",
+                "path": "",
                 "body": "{\n\t\"img\": {{FilePicker1.files[0]}}\n}"
             },
             "dynamicBindingPathList": [
                 {
                     "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -8178,7 +8157,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T15:07:51.391Z",
-        "updatedAt": "2024-02-12T17:09:51.761Z",
+        "updatedAt": "2024-02-21T10:44:40.656Z",
         "deleted": false,
         "policies": [
             {
@@ -8209,7 +8188,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/initApp"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8238,15 +8217,15 @@
                         "value": true
                     }
                 ],
-                "path": "/initApp",
+                "path": "",
                 "body": "{\n\t\"email\": {{JSON.stringify(appSettingsModalEmail.text)}},\n\t\"googleAppPassword\": {{JSON.stringify(appSettingsModalPassword.text)}},\n\t\"clientId\": {{JSON.stringify(appSettingsModalClientid.text)}},\n\t\"clientSecret\": {{JSON.stringify(appSettingsModalSecret.text)}},\n\t\"redirectUri\": {{JSON.stringify(appSettingsModalRedirectUri.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
-                    "key": "datasourceUrl"
+                    "key": "body"
                 },
                 {
-                    "key": "body"
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -8263,7 +8242,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T12:47:58.188Z",
-        "updatedAt": "2024-02-15T13:15:43.481Z",
+        "updatedAt": "2024-02-21T10:44:37.203Z",
         "deleted": false,
         "policies": [
             {
@@ -8294,7 +8273,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getCredentials"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8323,7 +8302,7 @@
                         "value": true
                     }
                 ],
-                "path": "/getCredentials"
+                "path": ""
             },
             "dynamicBindingPathList": [
                 {
@@ -8339,7 +8318,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:17:59.377Z",
-        "updatedAt": "2024-02-15T13:15:41.399Z",
+        "updatedAt": "2024-02-21T10:44:31.971Z",
         "deleted": false,
         "policies": [
             {
@@ -8370,7 +8349,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getAuthorizationUrl"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8394,9 +8373,13 @@
                         "value": true
                     }
                 ],
-                "path": "/getAuthorizationUrl"
+                "path": ""
             },
-            "dynamicBindingPathList": [],
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
             "isValid": true,
             "invalids": [],
             "jsonPathKeys": [
@@ -8406,7 +8389,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:47:44.921Z",
-        "updatedAt": "2024-02-09T08:23:45.692Z",
+        "updatedAt": "2024-02-21T10:37:58.983Z",
         "deleted": false,
         "policies": [
             {
@@ -8508,7 +8491,7 @@
             "datasource": {
                 "name": "DEFAULT_REST_DATASOURCE",
                 "datasourceConfiguration": {
-                    "url": "https://{{main.env.nodeUrl}}"
+                    "url": "{{main.env.nodeUrl}}/getSelectedAttributeGroups"
                 },
                 "invalids": [],
                 "isValid": true,
@@ -8537,12 +8520,15 @@
                         "value": true
                     }
                 ],
-                "path": "/getSelectedAttributeGroups",
+                "path": "",
                 "body": "{\n\"userAttributes\": {{JSON.stringify(Table1.selectedRow.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
                     "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
                 }
             ],
             "isValid": true,
@@ -8555,7 +8541,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-16T14:50:18.715Z",
-        "updatedAt": "2024-02-19T09:09:22.603Z",
+        "updatedAt": "2024-02-21T10:41:10.255Z",
         "deleted": false,
         "policies": [
             {

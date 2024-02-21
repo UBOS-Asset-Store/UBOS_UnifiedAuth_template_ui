@@ -9295,7 +9295,7 @@
                                                                                 "enableRotation": false,
                                                                                 "enableDownload": false,
                                                                                 "objectFit": "contain",
-                                                                                "image": "https://{{main.env.nodeUrl}}/get_logo",
+                                                                                "image": "{{main.env.nodeUrl}}/get_logo",
                                                                                 "widgetName": "Image1",
                                                                                 "version": 1,
                                                                                 "animateLoading": true,
