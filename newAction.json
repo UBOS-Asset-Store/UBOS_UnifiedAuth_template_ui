@@ -928,7 +928,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:02:12.192Z",
-        "updatedAt": "2024-02-21T16:12:38.741Z",
+        "updatedAt": "2024-02-26T11:57:49.772Z",
         "deleted": false,
         "policies": [
             {
@@ -7738,16 +7738,15 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(selectAttributeGroups.selectedOptionValues)},attributeIds,{{JSON.stringify(addUserSelectAttributes.selectedOptionValues)",
-                "JSON.stringify(addUserSelectAttributes.selectedOptionValues),main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:16:19.836Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(selectAttributeGroups.selectedOptionValues)},attributeIds,{{JSON.stringify(addUserSelectAttributes.selectedOptionValues),2024-01-25T14:48:12.126Z,2024-02-21T16:16:28.277Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:20:43.665Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
                 "JSON.stringify(selectAttributeGroups.selectedOptionValues)",
-                "JSON.stringify(addUserSelectAttributes.selectedOptionValues)"
+                "JSON.stringify(addUserSelectAttributes.selectedOptionValues)",
+                "JSON.stringify(addUserSelectAttributes.selectedOptionValues),JSON.stringify(addUserSelectAttributes.selectedOptionValues),main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:16:19.836Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(selectAttributeGroups.selectedOptionValues)},attributeIds,{{JSON.stringify(addUserSelectAttributes.selectedOptionValues),2024-01-25T14:48:12.126Z,2024-02-21T16:16:28.277Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-25T14:48:12.126Z,2024-02-21T16:20:43.665Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(selectAttributeGroups.selectedOptionValues),JSON.stringify(addUserSelectAttributes.selectedOptionValues),2024-01-25T14:48:12.126Z,2024-02-21T16:20:53.858Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-25T14:48:12.126Z",
-        "updatedAt": "2024-02-21T16:20:53.858Z",
+        "updatedAt": "2024-02-26T11:07:52.886Z",
         "deleted": false,
         "policies": [
             {
@@ -7920,7 +7919,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:18:42.530Z",
-        "updatedAt": "2024-02-21T16:19:09.679Z",
+        "updatedAt": "2024-02-26T15:37:48.176Z",
         "deleted": false,
         "policies": [
             {
@@ -8010,13 +8009,13 @@
                 "JSON.stringify(editUserModalRole.selectedOptionValue)",
                 "JSON.stringify(editUserModalTable.tableData)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-21T16:07:42.715Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,Table1.selectedRow._id,2024-01-31T15:38:20.105Z,2024-02-21T16:07:44.529Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-21T16:12:37.283Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-26T15:41:17.631Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:38:20.105Z",
-        "updatedAt": "2024-02-21T16:12:37.283Z",
+        "updatedAt": "2024-02-26T15:41:19.114Z",
         "deleted": false,
         "policies": [
             {
@@ -8102,7 +8101,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-02T13:26:42.719Z",
-        "updatedAt": "2024-02-21T16:40:21.433Z",
+        "updatedAt": "2024-02-26T10:49:11.394Z",
         "deleted": false,
         "policies": [
             {
@@ -8486,7 +8485,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T16:33:58.470Z",
-        "updatedAt": "2024-02-21T16:39:43.807Z",
+        "updatedAt": "2024-02-26T10:49:38.901Z",
         "deleted": false,
         "policies": [
             {
@@ -8567,7 +8566,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-16T14:50:18.715Z",
-        "updatedAt": "2024-02-21T16:34:37.870Z",
+        "updatedAt": "2024-02-26T16:02:29.732Z",
         "deleted": false,
         "policies": [
             {
@@ -8656,5 +8655,123 @@
                 "users": []
             }
         ]
+    },
+    {
+        "_id": "65dcb5f7d7438b8fd2130675",
+        "applicationId": "jetsondashboard",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "getSelectedAttributes",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.nodeUrl}}/getSelectedAttributes"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "User Management",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ],
+                "body": "{\n\"userAttributes\": {{JSON.stringify(Table1.selectedRow.attributes)}}\n}"
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "datasourceUrl"
+                },
+                {
+                    "key": "body"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.nodeUrl",
+                "JSON.stringify(Table1.selectedRow.attributes)"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2024-02-26T16:01:59.424Z",
+        "updatedAt": "2024-02-26T16:03:49.414Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    },
+    {
+        "name": "editUser",
+        "collectionId": "6364e18e65d44c1100000006",
+        "executeOnLoad": false,
+        "pageId": "User Management",
+        "actionConfiguration": {
+            "body": "async ()=>{\n\t\tawait getSelectedAttributes.run();\n\t\tawait getSelectedAttributeGroups.run();\n\t\tawait getUniqueAttributes.run();\n\t\tshowModal('ModalEditRole')\n\t}",
+            "isAsync": true,
+            "timeoutInMillisecond": 10000,
+            "jsArguments": [],
+            "paginationType": "NONE",
+            "encodeParamsToggle": true
+        },
+        "_id": "65dcbe69d7438b8fd2130676",
+        "id": "65dcbe69d7438b8fd2130676",
+        "applicationId": "jetsondashboard",
+        "datasource": {
+            "isValid": true,
+            "messages": [],
+            "name": "UNUSED_DATASOURCE",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "",
+            "userPermissions": []
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "fullyQualifiedName": "JSObject1.editUser",
+        "isValid": true,
+        "jsonPathKeys": [
+            "async ()=>{}"
+        ],
+        "organizationId": "Org",
+        "pluginType": "JS"
     }
 ]

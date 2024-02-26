@@ -1488,7 +1488,7 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "widgetName": "FormButton2Copy",
-                                                                "text": "Edit",
+                                                                "text": "Save",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -1562,7 +1562,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left"
                                                             },
                                                             {
@@ -1790,7 +1789,7 @@
                                                             {
                                                                 "isVisible": true,
                                                                 "widgetName": "FormButton1Copy2",
-                                                                "text": "Edit",
+                                                                "text": "Save",
                                                                 "isDefaultClickDisabled": true,
                                                                 "recaptchaType": "V3",
                                                                 "version": 1,
@@ -1864,7 +1863,6 @@
                                                                     }
                                                                 ],
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left"
                                                             },
                                                             {
@@ -2374,7 +2372,7 @@
                                                         "isCellVisible": true,
                                                         "isDerived": false,
                                                         "label": "_id",
-                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
                                                     },
                                                     "deleted": {
                                                         "index": 3,
@@ -2425,7 +2423,7 @@
                                                         "isCellVisible": true,
                                                         "isDerived": false,
                                                         "label": "name",
-                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
+                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.name))}}"
                                                     },
                                                     "position": {
                                                         "index": 4,
@@ -2442,7 +2440,7 @@
                                                         "isCellVisible": true,
                                                         "isDerived": false,
                                                         "label": "position",
-                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.position))}}"
+                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.position))}}"
                                                     },
                                                     "icon": {
                                                         "index": 6,
@@ -2587,7 +2585,6 @@
                                                 "groupButtons": {
                                                     "groupButton1": {
                                                         "label": "Edit Page",
-                                                        "iconName": "edit",
                                                         "id": "groupButton1",
                                                         "widgetId": "",
                                                         "buttonColor": "#107de1",
@@ -2601,7 +2598,6 @@
                                                     },
                                                     "groupButton2": {
                                                         "label": "Delete Page",
-                                                        "iconName": "delete",
                                                         "id": "groupButton2",
                                                         "buttonColor": "#DD4B34",
                                                         "buttonType": "SIMPLE",
@@ -2804,7 +2800,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left"
                                                             },
                                                             {
@@ -3247,7 +3242,6 @@
                                                                     }
                                                                 ],
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left"
                                                             },
                                                             {
@@ -3713,7 +3707,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left",
                                                                 "onClick": "{{closeModal('ModalCreateRoleCopy')}}",
                                                                 "dynamicPropertyPathList": [
@@ -3978,7 +3971,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left",
                                                                 "onClick": "{{closeModal('ModalCreateAttributeGroup')}}",
                                                                 "dynamicPropertyPathList": []
@@ -4244,7 +4236,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left",
                                                                 "onClick": "{{closeModal('ModalCreateAttribute')}}",
                                                                 "dynamicPropertyPathList": []
@@ -5110,7 +5101,7 @@
                                                         "isCellVisible": true,
                                                         "isDerived": false,
                                                         "label": "Created",
-                                                        "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
+                                                        "computedValue": "{{roles_table.sanitizedTableData.map((currentRow) => ( currentRow.createdAt))}}"
                                                     }
                                                 },
                                                 "derivedColumns": {},
@@ -5333,7 +5324,6 @@
                                                         "index": 1,
                                                         "onClick": "{{deleteRole.run(() => getRoles.run(), () => {})}}",
                                                         "iconColor": "#FFFFFF",
-                                                        "iconName": "trash",
                                                         "backgroundColor": "#DD4B34",
                                                         "textColor": "#FFFFFF"
                                                     }
@@ -5748,7 +5738,6 @@
                                                                     }
                                                                 ],
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left",
                                                                 "onClick": "{{closeModal('ModalAddModule')}}"
                                                             }
@@ -5920,7 +5909,6 @@
                                                 ],
                                                 "boxShadow": "VARIANT3",
                                                 "borderRadius": "ROUNDED",
-                                                "iconName": "undo",
                                                 "iconAlign": "left"
                                             },
                                             {
@@ -5997,7 +5985,7 @@
                                                 ],
                                                 "borderRadius": "ROUNDED",
                                                 "boxShadow": "VARIANT3",
-                                                "onClick": "{{deleteAttributeGroup.run(() => getAttributes.run(()=>closeModal(\"deleteAttributeGroupModal\")), () => {})}}",
+                                                "onClick": "{{deleteAttributeGroup.run(() => {getAttributes.run(()=>closeModal(\"deleteAttributeGroupModal\"));getAttributeGroupsForSelect.run()}, () => {})}}",
                                                 "dynamicPropertyPathList": [
                                                     {
                                                         "key": "onClick"
@@ -6309,13 +6297,12 @@
                                                 ],
                                                 "borderRadius": "ROUNDED",
                                                 "boxShadow": "VARIANT3",
-                                                "iconName": "undo",
                                                 "iconAlign": "left"
                                             },
                                             {
                                                 "isVisible": true,
                                                 "animateLoading": true,
-                                                "text": "Edit",
+                                                "text": "Save",
                                                 "buttonColor": "#107de1",
                                                 "buttonVariant": "PRIMARY",
                                                 "placement": "CENTER",
@@ -6360,7 +6347,6 @@
                                                 ],
                                                 "borderRadius": "ROUNDED",
                                                 "boxShadow": "VARIANT3",
-                                                "iconName": "edit",
                                                 "iconAlign": "left"
                                             },
                                             {
@@ -6612,7 +6598,7 @@
                                                                 "widgetName": "editUserModalAttributes",
                                                                 "isFilterable": true,
                                                                 "serverSideFiltering": false,
-                                                                "defaultOptionValue": "{{Table1.selectedRow.attributes.map(e => ({\n  \"label\": e.attributeName,\n  \"value\": e.attributeId\n}));}}",
+                                                                "defaultOptionValue": "{{getSelectedAttributes.data}}",
                                                                 "version": 1,
                                                                 "isRequired": false,
                                                                 "isDisabled": false,
@@ -6664,13 +6650,13 @@
                                                                 "isShowLoading": true,
                                                                 "dynamicBindingPathList": [
                                                                     {
-                                                                        "key": "tableData"
-                                                                    },
-                                                                    {
                                                                         "key": "primaryColumns.attributeName.computedValue"
                                                                     },
                                                                     {
                                                                         "key": "primaryColumns.attributeId.computedValue"
+                                                                    },
+                                                                    {
+                                                                        "key": "tableData"
                                                                     }
                                                                 ],
                                                                 "primaryColumns": {
@@ -6710,7 +6696,7 @@
                                                                     }
                                                                 },
                                                                 "derivedColumns": {},
-                                                                "tableData": "{{getUniqueAttributes.data ? (getUniqueAttributes.data.map(e=> {\n\treturn{\n\t\tattributeId: e._id,\n\t\tattributeName: e.attributeName\n\t}\n})) : (editUserModalAttributes.selectedOptionLabels.map(attr => {\n\treturn{\n\t\tattributeId: \"\",\n\t\tattributeName: attr\n\t}\n}))}}",
+                                                                "tableData": "{{getUniqueAttributes.data.map(e=> {\n\treturn{\n\t\tattributeId: e._id,\n\t\tattributeName: e.attributeName\n\t}\n})}}",
                                                                 "columnSizeMap": {
                                                                     "task": 245,
                                                                     "step": 62,
@@ -7306,7 +7292,7 @@
                                                         "textSize": "PARAGRAPH",
                                                         "enableFilter": true,
                                                         "enableSort": true,
-                                                        "isVisible": false,
+                                                        "isVisible": true,
                                                         "isDisabled": false,
                                                         "isCellVisible": true,
                                                         "isDerived": false,
@@ -7419,7 +7405,6 @@
                                                 "groupButtons": {
                                                     "groupButton1": {
                                                         "label": "Edit User",
-                                                        "iconName": "edit",
                                                         "id": "groupButton1",
                                                         "widgetId": "",
                                                         "buttonColor": "#107de1",
@@ -7429,11 +7414,10 @@
                                                         "isDisabled": "{{!Table1.selectedRow._id || !appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update user\")}}",
                                                         "index": 0,
                                                         "menuItems": {},
-                                                        "onClick": "{{showModal('ModalEditRole'); getSelectedAttributeGroups.run();getUniqueAttributes.run()}}"
+                                                        "onClick": "{{JSObject1.editUser()}}"
                                                     },
                                                     "groupButton2": {
                                                         "label": "Delete User",
-                                                        "iconName": "delete",
                                                         "id": "groupButton2",
                                                         "buttonColor": "#DD4B34",
                                                         "buttonType": "SIMPLE",
@@ -7486,9 +7470,6 @@
                                                     },
                                                     {
                                                         "key": "groupButtons.groupButton1.isDisabled"
-                                                    },
-                                                    {
-                                                        "key": "groupButtons.groupButton1.onClick"
                                                     }
                                                 ],
                                                 "boxShadow": "VARIANT3",
@@ -7655,7 +7636,6 @@
                                                                 "borderRadius": "ROUNDED",
                                                                 "onClick": "{{createUser.run(() => (getUsers.run(),closeModal(\"ModalCreateUser\")), () => {})}}",
                                                                 "classStyle": "setBtnAlmostRight",
-                                                                "iconName": "new-person",
                                                                 "iconAlign": "left",
                                                                 "placement": "CENTER",
                                                                 "dynamicPropertyPathList": [
@@ -8215,7 +8195,6 @@
                                                                 ],
                                                                 "borderRadius": "ROUNDED",
                                                                 "boxShadow": "VARIANT3",
-                                                                "iconName": "undo",
                                                                 "iconAlign": "left"
                                                             },
                                                             {
@@ -8807,7 +8786,7 @@
                                                                                 "labelWidth": "13",
                                                                                 "widgetName": "appSettingsModalEmail",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentials.data.email}}",
+                                                                                "defaultText": "{{getCredentials.data.email ? getCredentials.data.email : ''}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -8815,7 +8794,7 @@
                                                                                 "isRequired": true,
                                                                                 "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": "input",
                                                                                 "inputType": "EMAIL",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -8857,7 +8836,7 @@
                                                                                 "labelWidth": "13",
                                                                                 "widgetName": "appSettingsModalPassword",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentials.data.googleAppPassword}}",
+                                                                                "defaultText": "{{getCredentials.data.googleAppPassword ? getCredentials.data.googleAppPassword : ''}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -8865,7 +8844,7 @@
                                                                                 "isRequired": true,
                                                                                 "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
-                                                                                "classStyle": "",
+                                                                                "classStyle": "input",
                                                                                 "inputType": "PASSWORD",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
@@ -9096,7 +9075,7 @@
                                                                                 "labelWidth": "13",
                                                                                 "widgetName": "appSettingsModalRedirectUri",
                                                                                 "version": 2,
-                                                                                "defaultText": "{{getCredentials.data.redirectUri}}",
+                                                                                "defaultText": "{{getCredentials.data.redirectUri ? getCredentials.data.redirectUri  : `${main.env.uiUrl}/LoginGoogle`}}",
                                                                                 "iconAlign": "left",
                                                                                 "autoFocus": false,
                                                                                 "labelStyle": "",
@@ -9134,7 +9113,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "{{main.env.nodeUrl}}/LoginGoogle",
+                                                                                "placeholderText": "{{main.env.uiUrl}}/LoginGoogle",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "isDisabled"
