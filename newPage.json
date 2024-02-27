@@ -8795,7 +8795,7 @@
                                                                                 "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "input",
-                                                                                "inputType": "EMAIL",
+                                                                                "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
                                                                                 "hideCard": false,
@@ -8821,7 +8821,7 @@
                                                                                     }
                                                                                 ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "placeholderText": "ubos@ubos.tech",
+                                                                                "placeholderText": "ubos@gmail.com",
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "isDisabled"
@@ -8845,7 +8845,7 @@
                                                                                 "isDisabled": "{{!appsmith.user.auth_module.user.info.user.attributes.some(e=>e.attributeName == \"update app settings\")}}",
                                                                                 "animateLoading": true,
                                                                                 "classStyle": "input",
-                                                                                "inputType": "PASSWORD",
+                                                                                "inputType": "TEXT",
                                                                                 "buttonPosition": "right",
                                                                                 "type": "INPUT_WIDGET_V2",
                                                                                 "hideCard": false,
