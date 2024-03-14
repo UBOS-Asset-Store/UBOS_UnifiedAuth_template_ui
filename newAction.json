@@ -599,7 +599,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-08T09:31:03.416Z",
-        "updatedAt": "2024-02-21T15:52:29.171Z",
+        "updatedAt": "2024-03-14T08:47:55.834Z",
         "deleted": false,
         "policies": [
             {
@@ -6505,7 +6505,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-18T16:51:48.152Z",
-        "updatedAt": "2024-02-21T10:38:57.778Z",
+        "updatedAt": "2024-03-14T08:34:55.384Z",
         "deleted": false,
         "policies": [
             {
@@ -6549,7 +6549,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n  \"name\": \"{{name_field_edit.text}}\",\n  \"position\": {{position_field_edit.text}},\n  \"icon\": \"{{icon_field_edit.text}}\",\n  \"_id\": \"{{TableParent.selectedRow._id}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n  \"name\": \"{{name_field_edit.text}}\",\n  \"position\": {{position_field_edit.text}},\n  \"icon\": \"{{icon_field_edit.text}}\",\n  \"_id\": \"{{TableParent.selectedRow._id}}\",\n  \"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}},\n\t\"isHidden\":{{JSON.stringify(SwitchHide.isSwitchedOn)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -6577,7 +6577,8 @@
                 "position_field_edit.text",
                 "icon_field_edit.text",
                 "TableParent.selectedRow._id",
-                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)"
+                "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
+                "JSON.stringify(SwitchHide.isSwitchedOn)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -6976,7 +6977,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:18:32.543Z",
-        "updatedAt": "2024-02-21T10:38:06.049Z",
+        "updatedAt": "2024-03-06T10:39:58.633Z",
         "deleted": false,
         "policies": [
             {
@@ -7047,7 +7048,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-02-21T16:16:57.323Z",
+        "updatedAt": "2024-03-06T13:42:32.922Z",
         "deleted": false,
         "policies": [
             {
@@ -8267,7 +8268,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T12:47:58.188Z",
-        "updatedAt": "2024-02-21T10:44:37.203Z",
+        "updatedAt": "2024-03-06T11:25:19.508Z",
         "deleted": false,
         "policies": [
             {
@@ -8343,7 +8344,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:17:59.377Z",
-        "updatedAt": "2024-02-21T16:16:45.720Z",
+        "updatedAt": "2024-03-06T11:24:48.251Z",
         "deleted": false,
         "policies": [
             {

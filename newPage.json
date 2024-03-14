@@ -370,6 +370,9 @@
                                                                                 "dynamicPropertyPathList": [
                                                                                     {
                                                                                         "key": "isDisabled"
+                                                                                    },
+                                                                                    {
+                                                                                        "key": "onClick"
                                                                                     }
                                                                                 ],
                                                                                 "onClick": "{{makeSetting.run(() => checkData.run(), () => {})}}",
@@ -1946,6 +1949,42 @@
                                                                 ],
                                                                 "dynamicTriggerPathList": [],
                                                                 "placeholderText": "Position on page"
+                                                            },
+                                                            {
+                                                                "isVisible": true,
+                                                                "label": "Hide this page",
+                                                                "defaultSwitchState": "{{getModules.data.find(e=>e._id===main.store._id).isHidden}}",
+                                                                "widgetName": "SwitchHide",
+                                                                "alignWidget": "LEFT",
+                                                                "version": 1,
+                                                                "isDisabled": false,
+                                                                "animateLoading": true,
+                                                                "type": "SWITCH_WIDGET",
+                                                                "hideCard": false,
+                                                                "displayName": "Switch",
+                                                                "key": "6mdhzfilfi",
+                                                                "iconSVG": "/static/media/icon.a3115bc1.svg",
+                                                                "widgetId": "rx5kx665fz",
+                                                                "renderMode": "CANVAS",
+                                                                "isLoading": false,
+                                                                "parentColumnSpace": 10.28125,
+                                                                "parentRowSpace": 10,
+                                                                "leftColumn": 1,
+                                                                "rightColumn": 17,
+                                                                "topRow": 28,
+                                                                "bottomRow": 32,
+                                                                "parentId": "jg9d62dwwi",
+                                                                "dynamicBindingPathList": [
+                                                                    {
+                                                                        "key": "defaultSwitchState"
+                                                                    }
+                                                                ],
+                                                                "dynamicTriggerPathList": [],
+                                                                "dynamicPropertyPathList": [
+                                                                    {
+                                                                        "key": "defaultSwitchState"
+                                                                    }
+                                                                ]
                                                             }
                                                         ],
                                                         "minHeight": 400,
@@ -1975,7 +2014,7 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 64,
                                                 "topRow": 1,
-                                                "bottomRow": 31,
+                                                "bottomRow": 35,
                                                 "parentId": "g9jdc2j47q",
                                                 "dynamicBindingPathList": [],
                                                 "dynamicTriggerPathList": [],
@@ -2190,8 +2229,8 @@
                                                 "parentRowSpace": 10,
                                                 "leftColumn": 2,
                                                 "rightColumn": 63,
-                                                "topRow": 32,
-                                                "bottomRow": 60,
+                                                "topRow": 35,
+                                                "bottomRow": 63,
                                                 "parentId": "g9jdc2j47q",
                                                 "dynamicTriggerPathList": [
                                                     {
@@ -3413,6 +3452,7 @@
                         "Button9Copy",
                         "name_field_edit",
                         "position_field_edit",
+                        "SwitchHide",
                         "childTable",
                         "Container1",
                         "Canvas1",
