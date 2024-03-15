@@ -2393,6 +2393,9 @@
                                                     },
                                                     {
                                                         "key": "primaryColumns.userAttributes.computedValue"
+                                                    },
+                                                    {
+                                                        "key": "primaryColumns.isHidden.computedValue"
                                                     }
                                                 ],
                                                 "primaryColumns": {
@@ -2514,6 +2517,23 @@
                                                         "isDerived": false,
                                                         "label": "userAttributes",
                                                         "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.userAttributes.map(e=>e.attributeName)))}}"
+                                                    },
+                                                    "isHidden": {
+                                                        "index": 7,
+                                                        "width": 150,
+                                                        "id": "isHidden",
+                                                        "horizontalAlignment": "LEFT",
+                                                        "verticalAlignment": "CENTER",
+                                                        "columnType": "text",
+                                                        "textSize": "PARAGRAPH",
+                                                        "enableFilter": true,
+                                                        "enableSort": true,
+                                                        "isVisible": true,
+                                                        "isDisabled": false,
+                                                        "isCellVisible": true,
+                                                        "isDerived": false,
+                                                        "label": "isHidden",
+                                                        "computedValue": "{{TableParent.sanitizedTableData.map((currentRow) => ( currentRow.isHidden))}}"
                                                     }
                                                 },
                                                 "derivedColumns": {},
@@ -2530,7 +2550,8 @@
                                                     "icon",
                                                     "userAttributes",
                                                     "deleted",
-                                                    "isParent"
+                                                    "isParent",
+                                                    "isHidden"
                                                 ],
                                                 "enableClientSideSearch": true,
                                                 "isVisibleSearch": true,
@@ -2754,7 +2775,7 @@
                                 "parentColumnSpace": 19.046875,
                                 "parentRowSpace": 10,
                                 "leftColumn": 6,
-                                "rightColumn": 64,
+                                "rightColumn": 63,
                                 "topRow": 8,
                                 "bottomRow": 72,
                                 "parentId": "0",
@@ -3552,7 +3573,7 @@
                         "snapColumns": 64,
                         "widgetId": "0",
                         "topRow": 0,
-                        "bottomRow": 1400,
+                        "bottomRow": 1390,
                         "parentRowSpace": 1,
                         "type": "CANVAS_WIDGET",
                         "detachFromLayout": true,
@@ -5506,7 +5527,7 @@
                                 "parentColumnSpace": 19.046875,
                                 "parentRowSpace": 10,
                                 "leftColumn": 6,
-                                "rightColumn": 64,
+                                "rightColumn": 63,
                                 "topRow": 8,
                                 "bottomRow": 137,
                                 "parentId": "0",
