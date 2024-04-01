@@ -599,7 +599,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-11-08T09:31:03.416Z",
-        "updatedAt": "2024-03-14T08:47:55.834Z",
+        "updatedAt": "2024-04-01T09:45:24.021Z",
         "deleted": false,
         "policies": [
             {
@@ -643,7 +643,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"firstname\": {{JSON.stringify(firstname_field.text)}},\n\t\"lastname\": {{JSON.stringify(lastname_field.text)}},\n\t\"email\": {{JSON.stringify(email_field.text)}},\n\t\"password\": {{JSON.stringify(pass_field.text)}},\n\t\"role\": {{JSON.stringify(field_add_user_role.selectedOptionValue)}},\n\t\"attributes\": {{JSON.stringify(attributeUserTable.tableData)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
+                "body": "{\n\t\"firstname\": {{JSON.stringify(firstname_field.text)}},\n\t\"lastname\": {{JSON.stringify(lastname_field.text)}},\n\t\"email\": {{JSON.stringify(email_field.text.toLowerCase())}},\n\t\"password\": {{JSON.stringify(pass_field.text)}},\n\t\"role\": {{JSON.stringify(field_add_user_role.selectedOptionValue)}},\n\t\"attributes\": {{JSON.stringify(attributeUserTable.tableData)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -669,12 +669,13 @@
                 "main.env.nodeUrl",
                 "JSON.stringify(firstname_field.text)",
                 "JSON.stringify(lastname_field.text)",
-                "JSON.stringify(email_field.text)",
+                "JSON.stringify(email_field.text.t)",
                 "JSON.stringify(pass_field.text)",
                 "JSON.stringify(field_add_user_role.selectedOptionValue)",
                 "JSON.stringify(attributeUserTable.tableData)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,JSON.stringify(email_field.text.),DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,JSON.stringify(email_field.text.t),DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl",
+                "JSON.stringify(email_field.text.toLowerCase())"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -2381,7 +2382,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T15:13:14.157Z",
-        "updatedAt": "2024-02-21T10:38:02.617Z",
+        "updatedAt": "2024-04-01T09:47:33.731Z",
         "deleted": false,
         "policies": [
             {
@@ -2425,7 +2426,7 @@
                     }
                 ],
                 "queryParameters": [],
-                "body": "{\n\t\"email\":\"{{email_field.text}}\",\n\t\"password\":\"{{pass_field.text}}\"\n}",
+                "body": "{\n\t\"email\":\"{{email_field.text.toLowerCase()}}\",\n\t\"password\":\"{{pass_field.text}}\"\n}",
                 "bodyFormData": [],
                 "formData": {
                     "apiContentType": "none"
@@ -2449,8 +2450,9 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "email_field.text",
-                "pass_field.text"
+                "email_field.text.to",
+                "pass_field.text",
+                "email_field.text.toLowerCase()"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
@@ -5438,7 +5440,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-08-29T14:52:15.502Z",
-        "updatedAt": "2024-02-21T10:39:44.206Z",
+        "updatedAt": "2024-04-01T09:51:43.397Z",
         "deleted": false,
         "policies": [
             {
@@ -6956,7 +6958,7 @@
                     }
                 ],
                 "path": "",
-                "body": "{\n\t\"email\":{{JSON.stringify(setUpAppLogin.text)}},\n\t\"password\": {{JSON.stringify(setUpAppPass.text)}}\n}"
+                "body": "{\n\t\"email\":{{JSON.stringify(setUpAppLogin.text.toLowerCase())}},\n\t\"password\": {{JSON.stringify(setUpAppPass.text)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -6970,14 +6972,14 @@
             "invalids": [],
             "jsonPathKeys": [
                 "main.env.nodeUrl",
-                "JSON.stringify(setUpAppLogin.text)",
+                "JSON.stringify(setUpAppLogin.text.toLowerCase())",
                 "JSON.stringify(setUpAppPass.text)"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:18:32.543Z",
-        "updatedAt": "2024-04-01T07:43:20.400Z",
+        "updatedAt": "2024-04-01T09:48:25.526Z",
         "deleted": false,
         "policies": [
             {
@@ -7053,7 +7055,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-04-01T07:43:32.649Z",
+        "updatedAt": "2024-04-01T09:48:22.581Z",
         "deleted": false,
         "policies": [
             {
@@ -7991,7 +7993,7 @@
                     }
                 ],
                 "path": "",
-                "body": "{\t\n\t\"firstname\": {{JSON.stringify(editUserModalName.text)}},\n\t\"lastname\": {{JSON.stringify(editUserModalSurname.text)}},\n\t\"email\": {{JSON.stringify(editUserModalEmail.text)}},\t\n\t\"role\": {{JSON.stringify(editUserModalRole.selectedOptionValue)}},\n\t\"attributes\": {{JSON.stringify(editUserModalTable.tableData)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
+                "body": "{\t\n\t\"firstname\": {{JSON.stringify(editUserModalName.text)}},\n\t\"lastname\": {{JSON.stringify(editUserModalSurname.text)}},\n\t\"email\": {{JSON.stringify(editUserModalEmail.text.toLowerCase())}},\t\n\t\"role\": {{JSON.stringify(editUserModalRole.selectedOptionValue)}},\n\t\"attributes\": {{JSON.stringify(editUserModalTable.tableData)}},\n\t\"userAttributes\": {{JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)}}\n}"
             },
             "dynamicBindingPathList": [
                 {
@@ -8011,17 +8013,17 @@
                 "Table1.selectedRow._id",
                 "JSON.stringify(editUserModalName.text)",
                 "JSON.stringify(editUserModalSurname.text)",
-                "JSON.stringify(editUserModalEmail.text)",
+                "JSON.stringify(editUserModalEmail.text.toLowerCase())",
                 "JSON.stringify(editUserModalRole.selectedOptionValue)",
                 "JSON.stringify(editUserModalTable.tableData)",
                 "JSON.stringify(appsmith.user.auth_module.user.info.user.attributes)",
-                "main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-21T16:12:37.283Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-02-26T15:41:17.631Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
+                "main.env.nodeUrl,JSON.stringify(editUserModalEmail.text.toLowerCase()),2024-01-31T15:38:20.105Z,2024-04-01T09:46:45.606Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl,2024-01-31T15:38:20.105Z,2024-04-01T09:52:54.113Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.nodeUrl"
             ],
             "userSetOnLoad": false,
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-31T15:38:20.105Z",
-        "updatedAt": "2024-02-26T15:41:19.114Z",
+        "updatedAt": "2024-04-01T09:52:55.644Z",
         "deleted": false,
         "policies": [
             {

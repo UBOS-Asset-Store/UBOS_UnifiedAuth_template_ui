@@ -323,14 +323,12 @@
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 18,
                                                                                 "parentId": "9let0sosfc",
-                                                                                "dynamicBindingPathList": [
-                                                                                    {
-                                                                                        "key": "validation"
-                                                                                    }
-                                                                                ],
+                                                                                "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "labelTextColor": "#716E6E",
-                                                                                "validation": "{{ setUpAppPass.text.length >= 8 }}"
+                                                                                "validation": "",
+                                                                                "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
+                                                                                "errorMessage": "Please ensure that your password meets the following criteria:\nMinimum of eight characters,\nat least one uppercase letter, one lowercase letter and one number."
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -669,7 +667,8 @@
                                                                                 "bottomRow": 8,
                                                                                 "parentId": "augpscet93",
                                                                                 "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "regex": ""
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -707,7 +706,7 @@
                                                                                 "label": "",
                                                                                 "labelPosition": "Left",
                                                                                 "labelAlignment": "left",
-                                                                                "labelWidth": 5,
+                                                                                "labelWidth": "1",
                                                                                 "widgetName": "pass_field",
                                                                                 "version": 2,
                                                                                 "defaultText": "",
@@ -735,13 +734,12 @@
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 18,
                                                                                 "parentId": "augpscet93",
-                                                                                "dynamicBindingPathList": [
-                                                                                    {
-                                                                                        "key": "validation"
-                                                                                    }
-                                                                                ],
+                                                                                "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "validation": "{{ pass_field.text.length >= 8 }}"
+                                                                                "validation": "",
+                                                                                "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$",
+                                                                                "errorMessage": "Please ensure that your password meets the following criteria:\nMinimum of eight characters,\nat least one uppercase letter, one lowercase letter and one number.",
+                                                                                "tooltip": ""
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -7685,7 +7683,7 @@
                                                                 "buttonVariant": "PRIMARY",
                                                                 "buttonColor": "#107de1",
                                                                 "disabledWhenInvalid": "{{!firstname_field.isValid || !lastname_field.isValid || !email_field.isValid || !pass_field.isValid || !confirm_pass_field.isValid || !field_add_user_role.isValid}}",
-                                                                "resetFormOnClick": false,
+                                                                "resetFormOnClick": true,
                                                                 "widgetId": "yv2edv5wtm",
                                                                 "renderMode": "CANVAS",
                                                                 "isLoading": false,
@@ -8035,7 +8033,7 @@
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
-                                                                "resetOnSubmit": false,
+                                                                "resetOnSubmit": true,
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
@@ -8074,7 +8072,7 @@
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
-                                                                "resetOnSubmit": false,
+                                                                "resetOnSubmit": true,
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
@@ -8112,7 +8110,7 @@
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
-                                                                "resetOnSubmit": false,
+                                                                "resetOnSubmit": true,
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
@@ -8151,7 +8149,7 @@
                                                                 "iconAlign": "left",
                                                                 "autoFocus": false,
                                                                 "labelStyle": "",
-                                                                "resetOnSubmit": false,
+                                                                "resetOnSubmit": true,
                                                                 "isRequired": true,
                                                                 "isDisabled": false,
                                                                 "animateLoading": true,
@@ -8172,17 +8170,14 @@
                                                                 "topRow": 43,
                                                                 "bottomRow": 50,
                                                                 "parentId": "ntuhkqxaw5",
-                                                                "dynamicBindingPathList": [
-                                                                    {
-                                                                        "key": "validation"
-                                                                    }
-                                                                ],
+                                                                "dynamicBindingPathList": [],
                                                                 "dynamicTriggerPathList": [],
                                                                 "tooltip": "",
-                                                                "validation": "{{pass_field.text.length > 7}}",
-                                                                "errorMessage": "Password must be at least 8 characters long.",
+                                                                "validation": "",
+                                                                "errorMessage": "Please ensure that your password meets the following criteria:\nMinimum of eight characters,\nat least one uppercase letter, one lowercase letter and one number.",
                                                                 "placeholderText": "Enter the password...",
-                                                                "labelTextSize": "PARAGRAPH"
+                                                                "labelTextSize": "PARAGRAPH",
+                                                                "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
                                                             },
                                                             {
                                                                 "isVisible": true,
@@ -11192,7 +11187,8 @@
                                                                                 "dynamicTriggerPathList": [],
                                                                                 "errorMessage": "Passwords must be the matching",
                                                                                 "validation": "{{InputPassword.text === InputConfirmPassword.text}}",
-                                                                                "placeholderText": "Confirm Password"
+                                                                                "placeholderText": "Confirm Password",
+                                                                                "regex": ""
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -11257,14 +11253,11 @@
                                                                                 "topRow": 25,
                                                                                 "bottomRow": 29,
                                                                                 "parentId": "9ewzguz7ga",
-                                                                                "dynamicBindingPathList": [
-                                                                                    {
-                                                                                        "key": "validation"
-                                                                                    }
-                                                                                ],
+                                                                                "dynamicBindingPathList": [],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "errorMessage": "The value must be at least 8 characters",
-                                                                                "validation": "{{InputPassword.text.length > 7}}"
+                                                                                "errorMessage": "Please ensure that your password meets the following criteria:\nMinimum of eight characters,\nat least one uppercase letter, one lowercase letter and one number.",
+                                                                                "validation": "",
+                                                                                "regex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
