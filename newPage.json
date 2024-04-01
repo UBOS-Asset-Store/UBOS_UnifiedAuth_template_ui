@@ -323,9 +323,14 @@
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 18,
                                                                                 "parentId": "9let0sosfc",
-                                                                                "dynamicBindingPathList": [],
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "validation"
+                                                                                    }
+                                                                                ],
                                                                                 "dynamicTriggerPathList": [],
-                                                                                "labelTextColor": "#716E6E"
+                                                                                "labelTextColor": "#716E6E",
+                                                                                "validation": "{{ setUpAppPass.text.length >= 8 }}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,
@@ -730,8 +735,13 @@
                                                                                 "topRow": 14,
                                                                                 "bottomRow": 18,
                                                                                 "parentId": "augpscet93",
-                                                                                "dynamicBindingPathList": [],
-                                                                                "dynamicTriggerPathList": []
+                                                                                "dynamicBindingPathList": [
+                                                                                    {
+                                                                                        "key": "validation"
+                                                                                    }
+                                                                                ],
+                                                                                "dynamicTriggerPathList": [],
+                                                                                "validation": "{{ pass_field.text.length >= 8 }}"
                                                                             },
                                                                             {
                                                                                 "isVisible": true,

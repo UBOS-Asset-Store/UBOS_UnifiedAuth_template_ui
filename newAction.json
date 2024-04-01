@@ -1749,7 +1749,7 @@
         "pluginType": "API",
         "pluginId": "API",
         "createdAt": "2022-10-25T08:45:50.977Z",
-        "updatedAt": "2024-02-21T16:40:51.705Z",
+        "updatedAt": "2024-04-01T07:24:48.109Z",
         "deleted": false,
         "policies": [
             {
@@ -6977,7 +6977,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:18:32.543Z",
-        "updatedAt": "2024-03-06T10:39:58.633Z",
+        "updatedAt": "2024-04-01T07:43:20.400Z",
         "deleted": false,
         "policies": [
             {
@@ -7021,11 +7021,16 @@
                 "timeoutInMillisecond": "20000",
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
-                "headers": [],
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
                 "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
-                    "apiContentType": "none"
+                    "apiContentType": "application/json"
                 },
                 "pluginSpecifiedTemplates": [
                     {
@@ -7048,7 +7053,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-01-10T16:22:52.743Z",
-        "updatedAt": "2024-03-06T13:42:32.922Z",
+        "updatedAt": "2024-04-01T07:43:32.649Z",
         "deleted": false,
         "policies": [
             {
@@ -8388,11 +8393,16 @@
                 "timeoutInMillisecond": 10000,
                 "encodeParamsToggle": true,
                 "httpMethod": "GET",
-                "headers": [],
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
                 "queryParameters": [],
                 "bodyFormData": [],
                 "formData": {
-                    "apiContentType": "none"
+                    "apiContentType": "application/json"
                 },
                 "pluginSpecifiedTemplates": [
                     {
@@ -8415,7 +8425,7 @@
             "confirmBeforeExecute": false
         },
         "createdAt": "2024-02-08T15:47:44.921Z",
-        "updatedAt": "2024-02-21T16:16:58.589Z",
+        "updatedAt": "2024-04-01T07:43:30.135Z",
         "deleted": false,
         "policies": [
             {
